@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <include
+        layout="@layout/toolbar_actionbar" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="400dp"
+        android:minWidth="400dp"
+        android:layout_marginTop="@dimen/element_margin_medium"
+        android:layout_marginLeft="@dimen/element_margin_medium"
+        android:layout_marginRight="@dimen/element_margin_medium"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNome"
+            local:MvxBind="Text Nome"
+            android:hint="Seu Nome"
+            android:layout_gravity="center_vertical"
+            android:textColorHighlight="#FF0000"
+            android:textColorHint="#FF0000"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_very_huge"/>
+    </android.support.design.widget.TextInputLayout>
+  <Mvx.MvxSpinner
+            android:id="@+id/spinnerAssuntos"
+            android:layout_width="match_parent"
+            local:MvxBind="ItemsSource ItemSpinner;SelectedItem SelectemSpinner"
+            android:layout_height="40.0dp"
+            android:layout_marginLeft="@dimen/element_margin_small"
+            android:layout_marginRight="@dimen/element_margin_small"
+            android:prompt="@string/assuntos"
+            android:layout_marginTop="6.0dp"/>
+  <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="400dp"
+        android:minWidth="400dp"
+        android:layout_marginLeft="@dimen/element_margin_medium"
+        android:layout_marginRight="@dimen/element_margin_medium"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNome"
+            local:MvxBind="Text Comentario"
+            android:hint="Escreva seu comentário"
+            android:layout_gravity="center_vertical"
+            android:textColorHighlight="#FF0000"
+            android:textColorHint="#FF0000"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_very_huge"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/element_margin_tiny"
+        android:layout_marginRight="@dimen/element_margin_tiny"
+        local:MvxBind="Click EnviarComentarioCommand"
+        android:text="Enviar Comentário" />
+</LinearLayout>

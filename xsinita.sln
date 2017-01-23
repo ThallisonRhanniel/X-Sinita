@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xsinita.Droid", "xsinita\xsinita.Droid.csproj", "{ABB3B035-129A-4E81-852C-719CC27EF603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xsinita.Core", "xsinita.Core\xsinita.Core.csproj", "{11F07651-6D37-45F8-BD05-27266E38C5B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABB3B035-129A-4E81-852C-719CC27EF603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB3B035-129A-4E81-852C-719CC27EF603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB3B035-129A-4E81-852C-719CC27EF603}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ABB3B035-129A-4E81-852C-719CC27EF603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB3B035-129A-4E81-852C-719CC27EF603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB3B035-129A-4E81-852C-719CC27EF603}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{11F07651-6D37-45F8-BD05-27266E38C5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11F07651-6D37-45F8-BD05-27266E38C5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11F07651-6D37-45F8-BD05-27266E38C5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11F07651-6D37-45F8-BD05-27266E38C5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

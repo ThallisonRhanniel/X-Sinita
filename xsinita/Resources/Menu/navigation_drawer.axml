@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:local="http://schemas.android.com/apk/res-auto">
+
+  <group android:id="@+id/nav_items">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Início" />
+  </group>
+
+  <item android:title="Programação">
+    <menu>
+      <item
+          android:id="@+id/nav_palestras"
+          android:title="Palestras" />
+      <item
+        android:id="@+id/nav_minicurso"
+        android:title="Minicurso" />
+      <item
+       android:id="@+id/nav_workshops"
+       android:title="Workshops" />
+    </menu>
+  </item>
+
+ 
+  <group android:id="@+id/nav_footer">
+    <item
+        android:id="@+id/nav_comentar"
+        android:title="Comentar sobre o Evento" />
+
+    <item
+        android:id="@+id/nav_comentarios"
+        android:title="Comentários sobre o Evento" />
+
+  </group>
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5.0dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="145.0dp"
+        android:id="@+id/linearLayout1">
+        <refractored.controls.CircleImageView
+            android:id="@+id/iconPerfil"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            local:MvxBind="DrawableName iconUrl"
+            android:layout_marginTop="16.1dp"
+            android:layout_marginLeft="11.0dp"
+            local:civ_border_width="1dp"
+            android:layout_alignParentTop="true"
+            local:civ_border_color="#FF000000" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1"
+            android:layout_marginLeft="15.0dp">
+            <TextView
+                android:id="@+id/innerText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                local:MvxBind="Text title" />
+            <TextView
+                android:id="@+id/innerText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:padding="10dp"
+                local:MvxBind="Text descrição" />
+            <TextView
+                android:id="@+id/innerText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                local:MvxBind="Text data" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
