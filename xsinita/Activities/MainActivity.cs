@@ -12,7 +12,7 @@ using xsinita.Core.ViewModels.Base;
 namespace xsinita.Activities
 {
     [Activity(
-        Label = "Main Activity",
+        Label = "X Sinita",
         Theme = "@style/AppTheme",
         LaunchMode = LaunchMode.SingleTop,
         Name = "xsinita.activities.MainActivity"
@@ -46,30 +46,13 @@ namespace xsinita.Activities
             return base.OnOptionsItemSelected(item);
         }
 
-        private void ShowBackButton()
-        {
-            //TODO Tell the toggle to set the indicator off
-            //this.DrawerToggle.DrawerIndicatorEnabled = false;
-
-            //Block the menu slide gesture
-            DrawerLayout.SetDrawerLockMode(DrawerLayout.LockModeLockedClosed);
-        }
-
-        private void ShowHamburguerMenu()
-        {
-            //TODO set toggle indicator as enabled 
-            //this.DrawerToggle.DrawerIndicatorEnabled = true;
-
-            //Unlock the menu sliding gesture
-            DrawerLayout.SetDrawerLockMode(DrawerLayout.LockModeUnlocked);
-        }
-
         public override void OnBackPressed()
         {
             if (DrawerLayout != null && DrawerLayout.IsDrawerOpen(GravityCompat.Start))
                 DrawerLayout.CloseDrawers();
             else
-                base.OnBackPressed();
+                Alert();
+            //base.OnBackPressed();
         }
 
         public void HideSoftKeyboard()
@@ -81,5 +64,24 @@ namespace xsinita.Activities
 
             CurrentFocus.ClearFocus();
         }
+
+        public void Alert()
+        {
+            var adb = new AlertDialog.Builder(this);
+            adb.SetTitle("Confirmação");
+            adb.SetMessage("Olá! Antes de sair deixe um comentário sobre o Evento");
+            adb.SetPositiveButton("Sair", (sender, args) => { exit(); });
+            adb.SetNegativeButton("Cancelar ", (sender, args) => { });
+            adb.SetNeutralButton("Comentar", (sender, args) => { ViewModel.ShowComentarCommand.Execute(); });
+            adb.SetCancelable(false);
+            adb.Create().Show();
+        }
+
+        public void exit()
+        {
+            Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
+        }
+
+        
     }
 }

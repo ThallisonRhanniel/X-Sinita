@@ -1,5 +1,7 @@
-﻿using xsinita.Core.ViewModels.Home;
+﻿using MvvmCross.Core.ViewModels;
+using xsinita.Core.ViewModels.Home;
 using xsinita.Core.ViewModels.Menu;
+using xsinita.Core.ViewModels.Pages;
 
 namespace xsinita.Core.ViewModels.Base
 {
@@ -11,8 +13,17 @@ namespace xsinita.Core.ViewModels.Base
             ShowViewModel<MenuViewModel>();
 
         }
-
         
+        public IMvxCommand ShowComentarCommand
+        {
+            get { return new MvxCommand(ShowComentarExecuted); }
+        }
+
+        private void ShowComentarExecuted()
+        {
+            ShowViewModel<ComentarViewModel>();
+
+        }
 
         public void Init(object hint)
         {
@@ -28,9 +39,6 @@ namespace xsinita.Core.ViewModels.Base
             // }
         }
 
-        public override void Start()
-        {
-            //base.Start();
-        }
+        
     }
 }

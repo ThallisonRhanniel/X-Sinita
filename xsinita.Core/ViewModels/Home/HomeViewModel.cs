@@ -9,6 +9,7 @@ namespace xsinita.Core.ViewModels.Home
 {
     public class HomeViewModel : BaseViewModel
     {
+        
 
 
         private readonly IMvxWebBrowserTask _webBrowser;
@@ -25,7 +26,7 @@ namespace xsinita.Core.ViewModels.Home
         }
         public ICommand ShowInstagramCommand
         {
-            get { return new MvxCommand(() => _webBrowser.ShowWebPage("https://www.instagram.com/sinitaftc")); }
+            get { return new MvxCommand(() => _webBrowser.ShowWebPage("https://www.instagram.com/p/BKntXHfAwNd/?taken-by=sinitaftc")); } 
         }
         public ICommand ShowLinkedinThallisonCommand
         {
