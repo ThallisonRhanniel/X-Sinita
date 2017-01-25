@@ -1,6 +1,8 @@
+using System;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
+using Android.Support.V4.App;
 using Android.Support.V7.Widget;
 using Android.Views;
 using MvvmCross.Droid.Shared.Attributes;
@@ -40,10 +42,7 @@ namespace xsinita.Fragments.AndroidSpecific
             return view;
         }
 
-        public override void OnDestroyView()
-        {
-            
-        }
+       
 
         protected override int FragmentId => Resource.Layout.fragment_recyclerview;
 

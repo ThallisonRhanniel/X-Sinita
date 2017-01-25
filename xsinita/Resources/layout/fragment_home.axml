@@ -5,20 +5,236 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
+        android:id="@+id/toolbarMain"
         layout="@layout/toolbar_actionbar" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="118.5dp"
-        android:id="@+id/textView1"
-        android:layout_marginLeft="@dimen/element_margin_medium"
-        android:layout_marginRight="@dimen/element_margin_medium"
-        android:text="Use the menu to browse through all examples"
-        android:textColor="@color/black"
-        android:layout_centerInParent="true" />
-    <Button
-        android:layout_width="fill_parent"
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/toolbarMain"
+        android:id="@+id/cardview_Main1"
         android:layout_height="wrap_content"
-        android:text="Show Info ViewModel"
-        android:layout_centerInParent="true"
-        local:MvxBind="Click GoToInfoCommand" />
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20.0dp"
+        local:cardCornerRadius="12dp"
+        local:MvxBind="Click ShowFacebookCommand"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        local:cardElevation="8dp">
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8.0dp">
+            <ImageView
+                android:layout_below="@+id/cardview_Main1"
+                android:id="@+id/imageFacebook"
+                android:layout_width="100.0dp"
+                android:layout_height="82.3dp"
+                android:src="@drawable/icon_home_face"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginBottom="7.0dp" />
+            <View
+                android:layout_below="@+id/cardview_Main1"
+                android:layout_width="4.3dp"
+                android:layout_height="79.3dp"
+                android:layout_toRightOf="@id/imageFacebook"
+                android:background="#3A5FCD"
+                android:id="@+id/view1"
+                android:layout_marginTop="9.0dp"
+                android:layout_marginBottom="7.0dp" />
+            <TextView
+                android:text="Olá visite nossa pagina no facebook"
+                android:layout_width="222.0dp"
+                android:layout_height="79.0dp"
+                android:layout_toRightOf="@id/view1"
+                android:id="@+id/txtFacebook"
+                android:layout_below="@id/cardview_Main1"
+                android:textStyle="bold|italic"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="1.3dp"
+                android:layout_marginBottom="8.0dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardview_Main1"
+        android:id="@+id/cardview_Main2"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20.0dp"
+        local:MvxBind="Click ShowInstagramCommand"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        local:cardCornerRadius="12dp"
+        local:cardElevation="8dp">
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8.0dp">
+            <ImageView
+                android:layout_below="@+id/cardview_Main2"
+                android:id="@+id/imageInstagram"
+                android:layout_width="100.0dp"
+                android:layout_height="82.3dp"
+                android:src="@drawable/Icon_Home_Instagram"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginBottom="7.0dp" />
+            <View
+                android:layout_below="@+id/cardview_Main2"
+                android:layout_width="4.3dp"
+                android:layout_height="79.3dp"
+                android:layout_toRightOf="@id/imageInstagram"
+                android:background="#CD5C5C"
+                android:id="@+id/view2"
+                android:layout_marginTop="9.0dp" />
+            <TextView
+                android:text="Gostou do Evento? Confira as fotos em nosso Instagram"
+                android:layout_width="222.0dp"
+                android:layout_height="79.0dp"
+                android:layout_toRightOf="@id/view2"
+                android:id="@+id/textView1"
+                android:layout_below="@id/cardview_Main2"
+                android:textStyle="bold|italic"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="1.3dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardview_Main2"
+        android:id="@+id/cardview_Main3"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20.0dp"
+        local:cardCornerRadius="12dp"
+        local:MvxBind="Click ShowLinkedinThallisonCommand"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        local:cardElevation="8dp">
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8.0dp">
+            <ImageView
+                android:layout_below="@+id/cardview_Main3"
+                android:id="@+id/imageLinkedin"
+                android:layout_width="100.0dp"
+                android:layout_height="82.3dp"
+                android:src="@drawable/Icon_Home_Linkedin"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginBottom="7.0dp" />
+            <View
+                android:layout_below="@+id/cardview_Main3"
+                android:layout_width="4.3dp"
+                android:layout_height="79.3dp"
+                android:layout_toRightOf="@id/imageLinkedin"
+                android:background="#1E90FF"
+                android:id="@+id/view3"
+                android:layout_marginTop="9.0dp" />
+            <TextView
+                android:text="Desenvolvedor de Software | Xamarin &amp; C#"
+                android:layout_width="222.0dp"
+                android:layout_height="79.0dp"
+                android:layout_toRightOf="@id/view3"
+                android:id="@+id/textView1"
+                android:layout_below="@id/cardview_Main3"
+                android:textStyle="bold|italic"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="1.3dp" />
+            <TextView
+                android:text="Thallison Rhanniel"
+                android:layout_width="222.0dp"
+                android:layout_height="28.3dp"
+                android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                android:layout_toRightOf="@id/view3"
+                android:id="@+id/textNome"
+                android:layout_below="@id/cardview_Main3"
+                android:textStyle="bold|italic"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:layout_marginTop="62.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="1.3dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardview_Main3"
+        android:id="@+id/cardview_Main4"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20.0dp"
+        local:cardCornerRadius="12dp"
+        local:MvxBind="Click ShowLinkedinDiorgelesCommand"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        local:cardElevation="8dp">
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="8.0dp">
+            <ImageView
+                android:layout_below="@+id/cardview_Main4"
+                android:id="@+id/imageLinkedin2"
+                android:layout_width="100.0dp"
+                android:layout_height="82.3dp"
+                android:src="@drawable/Icon_Home_Linkedin"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginBottom="7.0dp" />
+            <View
+                android:layout_below="@+id/cardview_Main3"
+                android:layout_width="4.3dp"
+                android:layout_height="79.3dp"
+                android:layout_toRightOf="@id/imageLinkedin2"
+                android:background="#1E90FF"
+                android:id="@+id/view4"
+                android:layout_marginTop="9.0dp" />
+            <TextView
+                android:text="Desenvolvedor de Software | Python &amp; Django"
+                android:layout_width="222.0dp"
+                android:layout_height="79.0dp"
+                android:layout_toRightOf="@id/view4"
+                android:id="@+id/textView1"
+                android:layout_below="@id/cardview_Main3"
+                android:textStyle="bold|italic"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:layout_marginTop="7.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="1.3dp" />
+            <TextView
+                android:text="Diorgeles Dias"
+                android:layout_width="222.0dp"
+                android:layout_height="28.3dp"
+                android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                android:layout_toRightOf="@id/view4"
+                android:id="@+id/textNome2"
+                android:layout_below="@id/cardview_Main3"
+                android:textStyle="bold|italic"
+                android:textSize="16sp"
+                android:typeface="sans"
+                android:layout_marginTop="62.0dp"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="1.3dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 </RelativeLayout>

@@ -53,18 +53,7 @@ namespace xsinita.Fragments.AndroidSpecific
 
             return view;
         }
-
-        public override void OnDestroyView()
-        {
-            base.OnDestroyView();
-
-
-            view.OnFinishTemporaryDetach();
-
-
-
-
-        }
+        
 
         protected override int FragmentId => Resource.Layout.fragment_recyclerview_comentarios;
 

@@ -4,6 +4,7 @@
   <string name="drawer_open">Open navigation drawer</string>
   <string name="drawer_close">Close navigation drawer</string>
   <string name="assuntos">Choose a planet</string>
+  <string name="LinkedinThallison">https://br.linkedin.com/in/thallisonrhanniel</string>
   <string-array name="assuntos_array">
     <item>Evento</item>
     <item>Minicurso</item>

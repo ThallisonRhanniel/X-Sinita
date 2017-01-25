@@ -3985,58 +3985,67 @@ namespace xsinita
 			public const int Icon = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int icon_Minicurso_Carolina = 2130837591;
+			public const int Icon_Home_Face = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int icon_Minicurso_Celso = 2130837592;
+			public const int Icon_Home_Instagram = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int icon_Minicurso_Danilo = 2130837593;
+			public const int Icon_Home_Linkedin = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int icon_Minicurso_Diorgeles = 2130837594;
+			public const int icon_Minicurso_Carolina = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int icon_Minicurso_Walder = 2130837595;
+			public const int icon_Minicurso_Celso = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int icon_MinicursoEWorkshop_Sebrae = 2130837596;
+			public const int icon_Minicurso_Danilo = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int icon_Palestra_Achiles = 2130837597;
+			public const int icon_Minicurso_Diorgeles = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int icon_Palestra_Felipe = 2130837598;
+			public const int icon_Minicurso_Walder = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int icon_Palestra_Francisco = 2130837599;
+			public const int icon_MinicursoEWorkshop_Sebrae = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int icon_Palestra_Isidro = 2130837600;
+			public const int icon_Palestra_Achiles = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int icon_Palestra_Pericles = 2130837601;
+			public const int icon_Palestra_Felipe = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int icon_splash = 2130837602;
+			public const int icon_Palestra_Francisco = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int icon_Workshop_Clebson = 2130837603;
+			public const int icon_Palestra_Isidro = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int icon_Workshop_Pedro = 2130837604;
+			public const int icon_Palestra_Pericles = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int icon_Workshop_Robert = 2130837605;
+			public const int icon_splash = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int navigation_empty_icon = 2130837606;
-			
-			// aapt resource value: 0x7f020068
-			public const int notification_template_icon_bg = 2130837608;
+			public const int icon_Workshop_Clebson = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int splash = 2130837607;
+			public const int icon_Workshop_Pedro = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int icon_Workshop_Robert = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int navigation_empty_icon = 2130837609;
+			
+			// aapt resource value: 0x7f02006b
+			public const int notification_template_icon_bg = 2130837611;
+			
+			// aapt resource value: 0x7f02006a
+			public const int splash = 2130837610;
 			
 			static Drawable()
 			{
@@ -4051,8 +4060,8 @@ namespace xsinita
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06009f
-			public const int Descricao = 2131099807;
+			// aapt resource value: 0x7f0600af
+			public const int Descricao = 2131099823;
 			
 			// aapt resource value: 0x7f06000b
 			public const int MvvmCrossTagId = 2131099659;
@@ -4060,11 +4069,11 @@ namespace xsinita
 			// aapt resource value: 0x7f06000c
 			public const int MvxBindingTagUnique = 2131099660;
 			
-			// aapt resource value: 0x7f06008d
-			public const int RelativeTombamento = 2131099789;
+			// aapt resource value: 0x7f06009d
+			public const int RelativeTombamento = 2131099805;
 			
-			// aapt resource value: 0x7f06008e
-			public const int action0 = 2131099790;
+			// aapt resource value: 0x7f06009e
+			public const int action0 = 2131099806;
 			
 			// aapt resource value: 0x7f060060
 			public const int action_bar = 2131099744;
@@ -4090,8 +4099,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060061
 			public const int action_context_bar = 2131099745;
 			
-			// aapt resource value: 0x7f060092
-			public const int action_divider = 2131099794;
+			// aapt resource value: 0x7f0600a2
+			public const int action_divider = 2131099810;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -4123,8 +4132,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060021
 			public const int always = 2131099681;
 			
-			// aapt resource value: 0x7f06009b
-			public const int appbar = 2131099803;
+			// aapt resource value: 0x7f0600ab
+			public const int appbar = 2131099819;
 			
 			// aapt resource value: 0x7f06002d
 			public const int auto = 2131099693;
@@ -4141,8 +4150,20 @@ namespace xsinita
 			// aapt resource value: 0x7f060049
 			public const int buttonPanel = 2131099721;
 			
+			// aapt resource value: 0x7f06009f
+			public const int cancel_action = 2131099807;
+			
+			// aapt resource value: 0x7f060083
+			public const int cardview_Main1 = 2131099779;
+			
+			// aapt resource value: 0x7f060087
+			public const int cardview_Main2 = 2131099783;
+			
+			// aapt resource value: 0x7f06008b
+			public const int cardview_Main3 = 2131099787;
+			
 			// aapt resource value: 0x7f06008f
-			public const int cancel_action = 2131099791;
+			public const int cardview_Main4 = 2131099791;
 			
 			// aapt resource value: 0x7f06002e
 			public const int center = 2131099694;
@@ -4156,8 +4177,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060057
 			public const int checkbox = 2131099735;
 			
-			// aapt resource value: 0x7f060095
-			public const int chronometer = 2131099797;
+			// aapt resource value: 0x7f0600a5
+			public const int chronometer = 2131099813;
 			
 			// aapt resource value: 0x7f060037
 			public const int clip_horizontal = 2131099703;
@@ -4216,8 +4237,8 @@ namespace xsinita
 			// aapt resource value: 0x7f06001f
 			public const int end = 2131099679;
 			
-			// aapt resource value: 0x7f06009a
-			public const int end_padder = 2131099802;
+			// aapt resource value: 0x7f0600aa
+			public const int end_padder = 2131099818;
 			
 			// aapt resource value: 0x7f060028
 			public const int enterAlways = 2131099688;
@@ -4255,8 +4276,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060047
 			public const int icon = 2131099719;
 			
-			// aapt resource value: 0x7f06008b
-			public const int iconPerfil = 2131099787;
+			// aapt resource value: 0x7f06009b
+			public const int iconPerfil = 2131099803;
 			
 			// aapt resource value: 0x7f060023
 			public const int ifRoom = 2131099683;
@@ -4265,13 +4286,25 @@ namespace xsinita
 			public const int image = 2131099716;
 			
 			// aapt resource value: 0x7f060084
-			public const int image_view_row_icon = 2131099780;
+			public const int imageFacebook = 2131099780;
 			
-			// aapt resource value: 0x7f060099
-			public const int info = 2131099801;
+			// aapt resource value: 0x7f060088
+			public const int imageInstagram = 2131099784;
 			
 			// aapt resource value: 0x7f06008c
-			public const int innerText = 2131099788;
+			public const int imageLinkedin = 2131099788;
+			
+			// aapt resource value: 0x7f060090
+			public const int imageLinkedin2 = 2131099792;
+			
+			// aapt resource value: 0x7f060094
+			public const int image_view_row_icon = 2131099796;
+			
+			// aapt resource value: 0x7f0600a9
+			public const int info = 2131099817;
+			
+			// aapt resource value: 0x7f06009c
+			public const int innerText = 2131099804;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
@@ -4279,14 +4312,14 @@ namespace xsinita
 			// aapt resource value: 0x7f060032
 			public const int left = 2131099698;
 			
-			// aapt resource value: 0x7f060093
-			public const int line1 = 2131099795;
+			// aapt resource value: 0x7f0600a3
+			public const int line1 = 2131099811;
 			
-			// aapt resource value: 0x7f060097
-			public const int line3 = 2131099799;
+			// aapt resource value: 0x7f0600a7
+			public const int line3 = 2131099815;
 			
-			// aapt resource value: 0x7f06008a
-			public const int linearLayout1 = 2131099786;
+			// aapt resource value: 0x7f06009a
+			public const int linearLayout1 = 2131099802;
 			
 			// aapt resource value: 0x7f06000d
 			public const int listMode = 2131099661;
@@ -4300,8 +4333,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060070
 			public const int main_frame = 2131099760;
 			
-			// aapt resource value: 0x7f060091
-			public const int media_actions = 2131099793;
+			// aapt resource value: 0x7f0600a1
+			public const int media_actions = 2131099809;
 			
 			// aapt resource value: 0x7f060020
 			public const int middle = 2131099680;
@@ -4312,32 +4345,32 @@ namespace xsinita
 			// aapt resource value: 0x7f060018
 			public const int multiply = 2131099672;
 			
-			// aapt resource value: 0x7f060089
-			public const int my_recycler_view = 2131099785;
+			// aapt resource value: 0x7f060099
+			public const int my_recycler_view = 2131099801;
 			
-			// aapt resource value: 0x7f0600a6
-			public const int nav_comentar = 2131099814;
+			// aapt resource value: 0x7f0600b6
+			public const int nav_comentar = 2131099830;
 			
-			// aapt resource value: 0x7f0600a7
-			public const int nav_comentarios = 2131099815;
+			// aapt resource value: 0x7f0600b7
+			public const int nav_comentarios = 2131099831;
 			
-			// aapt resource value: 0x7f0600a5
-			public const int nav_footer = 2131099813;
+			// aapt resource value: 0x7f0600b5
+			public const int nav_footer = 2131099829;
 			
-			// aapt resource value: 0x7f0600a1
-			public const int nav_home = 2131099809;
+			// aapt resource value: 0x7f0600b1
+			public const int nav_home = 2131099825;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int nav_items = 2131099808;
+			// aapt resource value: 0x7f0600b0
+			public const int nav_items = 2131099824;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int nav_minicurso = 2131099811;
+			// aapt resource value: 0x7f0600b3
+			public const int nav_minicurso = 2131099827;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int nav_palestras = 2131099810;
+			// aapt resource value: 0x7f0600b2
+			public const int nav_palestras = 2131099826;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int nav_workshops = 2131099812;
+			// aapt resource value: 0x7f0600b4
+			public const int nav_workshops = 2131099828;
 			
 			// aapt resource value: 0x7f060072
 			public const int navigation_frame = 2131099762;
@@ -4345,8 +4378,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060077
 			public const int navigation_header_container = 2131099767;
 			
-			// aapt resource value: 0x7f060083
-			public const int navigation_view = 2131099779;
+			// aapt resource value: 0x7f060093
+			public const int navigation_view = 2131099795;
 			
 			// aapt resource value: 0x7f060024
 			public const int never = 2131099684;
@@ -4375,8 +4408,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060059
 			public const int radio = 2131099737;
 			
-			// aapt resource value: 0x7f060088
-			public const int refresher = 2131099784;
+			// aapt resource value: 0x7f060098
+			public const int refresher = 2131099800;
 			
 			// aapt resource value: 0x7f060033
 			public const int right = 2131099699;
@@ -4477,8 +4510,8 @@ namespace xsinita
 			// aapt resource value: 0x7f060034
 			public const int start = 2131099700;
 			
-			// aapt resource value: 0x7f060090
-			public const int status_bar_latest_event_content = 2131099792;
+			// aapt resource value: 0x7f0600a0
+			public const int status_bar_latest_event_content = 2131099808;
 			
 			// aapt resource value: 0x7f06005a
 			public const int submenuarrow = 2131099738;
@@ -4489,35 +4522,41 @@ namespace xsinita
 			// aapt resource value: 0x7f06000f
 			public const int tabMode = 2131099663;
 			
-			// aapt resource value: 0x7f06009d
-			public const int tabs = 2131099805;
+			// aapt resource value: 0x7f0600ad
+			public const int tabs = 2131099821;
 			
-			// aapt resource value: 0x7f060098
-			public const int text = 2131099800;
+			// aapt resource value: 0x7f0600a8
+			public const int text = 2131099816;
 			
-			// aapt resource value: 0x7f060096
-			public const int text2 = 2131099798;
+			// aapt resource value: 0x7f0600a6
+			public const int text2 = 2131099814;
+			
+			// aapt resource value: 0x7f06008e
+			public const int textNome = 2131099790;
+			
+			// aapt resource value: 0x7f060092
+			public const int textNome2 = 2131099794;
 			
 			// aapt resource value: 0x7f060052
 			public const int textSpacerNoButtons = 2131099730;
 			
-			// aapt resource value: 0x7f060082
-			public const int textView1 = 2131099778;
+			// aapt resource value: 0x7f06008a
+			public const int textView1 = 2131099786;
 			
-			// aapt resource value: 0x7f060085
-			public const int text_container = 2131099781;
+			// aapt resource value: 0x7f060095
+			public const int text_container = 2131099797;
 			
 			// aapt resource value: 0x7f06007c
 			public const int text_input_password_toggle = 2131099772;
 			
-			// aapt resource value: 0x7f060086
-			public const int text_view_fullname = 2131099782;
+			// aapt resource value: 0x7f060096
+			public const int text_view_fullname = 2131099798;
 			
-			// aapt resource value: 0x7f060087
-			public const int text_view_username = 2131099783;
+			// aapt resource value: 0x7f060097
+			public const int text_view_username = 2131099799;
 			
-			// aapt resource value: 0x7f060094
-			public const int time = 2131099796;
+			// aapt resource value: 0x7f0600a4
+			public const int time = 2131099812;
 			
 			// aapt resource value: 0x7f060048
 			public const int title = 2131099720;
@@ -4525,8 +4564,11 @@ namespace xsinita
 			// aapt resource value: 0x7f06004d
 			public const int title_template = 2131099725;
 			
-			// aapt resource value: 0x7f06009c
-			public const int toolbar = 2131099804;
+			// aapt resource value: 0x7f0600ac
+			public const int toolbar = 2131099820;
+			
+			// aapt resource value: 0x7f060082
+			public const int toolbarMain = 2131099778;
 			
 			// aapt resource value: 0x7f060027
 			public const int top = 2131099687;
@@ -4537,17 +4579,32 @@ namespace xsinita
 			// aapt resource value: 0x7f060073
 			public const int touch_outside = 2131099763;
 			
+			// aapt resource value: 0x7f060086
+			public const int txtFacebook = 2131099782;
+			
 			// aapt resource value: 0x7f060009
 			public const int up = 2131099657;
 			
 			// aapt resource value: 0x7f060016
 			public const int useLogo = 2131099670;
 			
+			// aapt resource value: 0x7f060085
+			public const int view1 = 2131099781;
+			
+			// aapt resource value: 0x7f060089
+			public const int view2 = 2131099785;
+			
+			// aapt resource value: 0x7f06008d
+			public const int view3 = 2131099789;
+			
+			// aapt resource value: 0x7f060091
+			public const int view4 = 2131099793;
+			
 			// aapt resource value: 0x7f06000a
 			public const int view_offset_helper = 2131099658;
 			
-			// aapt resource value: 0x7f06009e
-			public const int viewpager = 2131099806;
+			// aapt resource value: 0x7f0600ae
+			public const int viewpager = 2131099822;
 			
 			// aapt resource value: 0x7f060025
 			public const int withText = 2131099685;
@@ -4825,6 +4882,9 @@ namespace xsinita
 			
 			// aapt resource value: 0x7f090027
 			public const int ApplicationName = 2131296295;
+			
+			// aapt resource value: 0x7f09002b
+			public const int LinkedinThallison = 2131296299;
 			
 			// aapt resource value: 0x7f090000
 			public const int abc_action_bar_home_description = 2131296256;
