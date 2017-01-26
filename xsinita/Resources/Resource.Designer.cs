@@ -5046,6 +5046,9 @@ namespace xsinita
 			// aapt resource value: 0x7f07016b
 			public const int AppTheme_Base = 2131165547;
 			
+			// aapt resource value: 0x7f07016f
+			public const int AppTheme_Button = 2131165551;
+			
 			// aapt resource value: 0x7f07016c
 			public const int AppTheme_Login = 2131165548;
 			

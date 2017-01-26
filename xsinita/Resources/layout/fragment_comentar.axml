@@ -61,6 +61,7 @@
         android:id="@+id/btnEnviar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.Button"
         android:layout_marginLeft="@dimen/element_margin_tiny"
         android:layout_marginRight="@dimen/element_margin_tiny"
         local:MvxBind="Click EnviarComentarioCommand"
