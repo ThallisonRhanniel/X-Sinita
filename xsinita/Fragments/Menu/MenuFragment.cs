@@ -1,8 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using Android.Content;
 using Android.OS;
-using Android.Preferences;
 using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Views;
@@ -66,25 +64,17 @@ namespace xsinita.Fragments.Menu
                     ViewModel.ShowHomeCommand.Execute();
                     ((MainActivity)Activity).Title = "X Sinita";
                     break;
-                case Resource.Id.nav_palestras:
-                    ViewModel.ShowPalestrasCommand.Execute();
-                    ((MainActivity)Activity).Title = "Palestras";
-                    break;
-                case Resource.Id.nav_minicurso:
-                    ViewModel.ShowMinicursoCommand.Execute();
-                    ((MainActivity)Activity).Title = "Minicursos";
-                    break;
-                case Resource.Id.nav_workshops:
-                    ViewModel.ShowWorkshopCommand.Execute();
-                    ((MainActivity)Activity).Title = "Workshop";
+                case Resource.Id.nav_programacao:
+                    ViewModel.ShowProgramacaoCommand.Execute();
+                    ((MainActivity)Activity).Title = "Programação";
                     break;
                 case Resource.Id.nav_comentar:
-                    ViewModel.ShowComentarCommand.Execute();
+                    ViewModel.ShowEnviarComentarioCommand.Execute();
                     ((MainActivity)Activity).Title = "Comentar sobre o Evento";
                     break;
                 case Resource.Id.nav_comentarios:
                     ((MainActivity)Activity).Title = "Comentários sobre o Evento";
-                    ViewModel.ShowComentariosCommand.Execute();
+                    ViewModel.ShowMostrarComentariosCommand.Execute();
                     break;
             }
         }

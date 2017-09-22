@@ -16,9 +16,7 @@ namespace xsinita.Fragments.Base
     {
         protected Toolbar Toolbar { get; private set; }
         protected MvxActionBarDrawerToggle DrawerToggle { get; private set; }
-        /// <summary>
-        /// If true show the hamburger menu
-        /// </summary>
+        
         protected bool ShowHamburgerMenu { get; set; } = false;
 
         protected BaseFragment()

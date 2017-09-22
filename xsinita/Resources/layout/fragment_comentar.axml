@@ -10,7 +10,7 @@
     <android.support.design.widget.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="400dp"
+        android:maxWidth="400dp"    
         android:minWidth="400dp"
         android:layout_marginTop="@dimen/element_margin_medium"
         android:layout_marginLeft="@dimen/element_margin_medium"
@@ -28,7 +28,7 @@
             android:textColor="@color/dark_gray"
             android:textSize="@dimen/text_very_huge"/>
     </android.support.design.widget.TextInputLayout>
-  <Mvx.MvxSpinner
+   <Mvx.MvxSpinner
             android:id="@+id/spinnerAssuntos"
             android:layout_width="match_parent"
             local:MvxBind="ItemsSource ItemSpinner;SelectedItem SelectemSpinner"
@@ -51,19 +51,19 @@
             android:id="@+id/editNome"
             local:MvxBind="Text Comentario"
             android:hint="Escreva seu comentário"
-            android:layout_gravity="center_vertical"
             android:textColorHighlight="#FF0000"
             android:textColorHint="#FF0000"
             android:textColor="@color/dark_gray"
-            android:textSize="@dimen/text_very_huge"/>
+            android:textSize="@dimen/text_very_huge"
+            android:layout_gravity="center_vertical"/>
     </android.support.design.widget.TextInputLayout>
     <Button
+        local:MvxBind="Click EviarComentarioCommand"
         android:id="@+id/btnEnviar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.Button"
+        android:theme="@style/ColoredButton"
         android:layout_marginLeft="@dimen/element_margin_tiny"
         android:layout_marginRight="@dimen/element_margin_tiny"
-        local:MvxBind="Click EnviarComentarioCommand"
         android:text="Enviar Comentário" />
 </LinearLayout>

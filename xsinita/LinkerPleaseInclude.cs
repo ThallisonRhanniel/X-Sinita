@@ -4,6 +4,8 @@ using Android.App;
 using Android.Views;
 using Android.Widget;
 using MvvmCross.Binding.BindingContext;
+using MvvmCross.Core.Navigation;
+using MvvmCross.Core.ViewModels;
 
 namespace xsinita
 {
@@ -33,13 +35,13 @@ namespace xsinita
 
         public void Include(TextView text)
         {
-            text.TextChanged += (sender, args) => text.Text = "" + text.Text;
+            text.AfterTextChanged += (sender, args) => text.Text = "" + text.Text;
             text.Hint = "" + text.Hint;
         }
         
         public void Include(CheckedTextView text)
         {
-            text.TextChanged += (sender, args) => text.Text = "" + text.Text;
+            text.AfterTextChanged += (sender, args) => text.Text = "" + text.Text;
             text.Hint = "" + text.Hint;
         }
 
@@ -51,6 +53,21 @@ namespace xsinita
         public void Include(SeekBar sb)
         {
             sb.ProgressChanged += (sender, args) => sb.Progress = sb.Progress + 1;
+        }
+
+        public void Include(RadioGroup radioGroup)
+        {
+            radioGroup.CheckedChange += (sender, args) => radioGroup.Check(args.CheckedId);
+        }
+
+        public void Include(RadioButton radioButton)
+        {
+            radioButton.CheckedChange += (sender, args) => radioButton.Checked = args.IsChecked;
+        }
+		
+		public void Include(RatingBar ratingBar)
+        {
+            ratingBar.RatingBarChange += (sender, args) => ratingBar.Rating = 0 + ratingBar.Rating;
         }
 
         public void Include(Activity act)
@@ -85,6 +102,11 @@ namespace xsinita
             context.Dispose();
             var context2 = new MvxTaskBasedBindingContext();
             context2.Dispose();
+        }
+
+        public void Include(MvxNavigationService service, IMvxViewModelLoader loader)
+        {
+            service = new MvxNavigationService(null, loader);
         }
     }
 }

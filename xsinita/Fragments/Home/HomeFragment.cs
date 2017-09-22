@@ -1,11 +1,7 @@
-using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
-using Android.Widget;
 using MvvmCross.Droid.Shared.Attributes;
-using xsinita.Bootstrap;
-using xsinita.Core;
 using xsinita.Core.ViewModels.Base;
 using xsinita.Core.ViewModels.Home;
 using xsinita.Fragments.Base;
@@ -19,7 +15,7 @@ namespace xsinita.Fragments.Home
     
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            ShowHamburgerMenu = true; // só alterar para Tru para mostrar nas telas que eu quiser
+            ShowHamburgerMenu = true;
             return base.OnCreateView(inflater, container, savedInstanceState); ;
         }
         

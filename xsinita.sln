@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xsinita.Droid", "xsinita\xs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xsinita.Core", "xsinita.Core\xsinita.Core.csproj", "{11F07651-6D37-45F8-BD05-27266E38C5B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xsinita.Picasso", "Picasso\xsinita.Picasso.csproj", "{A6BFF053-0C7D-4CA0-B05F-7C5588F7B237}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{11F07651-6D37-45F8-BD05-27266E38C5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F07651-6D37-45F8-BD05-27266E38C5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F07651-6D37-45F8-BD05-27266E38C5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6BFF053-0C7D-4CA0-B05F-7C5588F7B237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6BFF053-0C7D-4CA0-B05F-7C5588F7B237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6BFF053-0C7D-4CA0-B05F-7C5588F7B237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6BFF053-0C7D-4CA0-B05F-7C5588F7B237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

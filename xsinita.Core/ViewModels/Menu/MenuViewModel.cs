@@ -1,95 +1,21 @@
-﻿
-using MvvmCross.Core.ViewModels;
-using xsinita.Core.ViewModels.AndroidSpecific;
+﻿using MvvmCross.Core.ViewModels;
 using xsinita.Core.ViewModels.Base;
+using xsinita.Core.ViewModels.Feedback;
 using xsinita.Core.ViewModels.Home;
-using xsinita.Core.ViewModels.Pages;
+using xsinita.Core.ViewModels.Programacao.ViewPager;
 
 namespace xsinita.Core.ViewModels.Menu
 {
     public class MenuViewModel : BaseViewModel
     {
-        #region Cross Platform Commands & Handlers
 
-
-        public IMvxCommand ShowHomeCommand
-        {
-            get { return new MvxCommand(ShowHomeExecuted); }
-        }
-
-        private void ShowHomeExecuted()
-        {
-            ShowViewModel<HomeViewModel>();
-
-        }
-
-        public IMvxCommand ShowComentarCommand
-        {
-            get { return new MvxCommand(ShowComentarExecuted); }
-        }
-
-        private void ShowComentarExecuted()
-        {
-            ShowViewModel<ComentarViewModel>();
-
-        }
-
-
-
-        #endregion
-
-        #region Android Specific Demos
-
-        public IMvxCommand ShowMinicursoCommand
-        {
-            get { return new MvxCommand(ShowMinicursoExecuted); }
-        }
-
-        private void ShowMinicursoExecuted()
-        {
-            ShowViewModel<RecyclerViewMinicursoViewModel>();
-
-        }
-
-        public IMvxCommand ShowWorkshopCommand
-        {
-            get { return new MvxCommand(ShowWorkshopExecuted); }
-        }
-
-        private void ShowWorkshopExecuted()
-        {
-            ShowViewModel<RecyclerViewWorkshopViewModel>();
-
-        }
-
-
-        public IMvxCommand ShowPalestrasCommand
-        {
-            get { return new MvxCommand(ShowPalestrasExecuted); }
-        }
-
-        private void ShowPalestrasExecuted()
-        {
-            ShowViewModel<ViewPagerPalestrasViewModel>();
-
-        }
-
-        public IMvxCommand ShowComentariosCommand
-        {
-            get { return new MvxCommand(ShowComentariosExecuted); }
-        }
-
-        private void ShowComentariosExecuted()
-        {
-            ShowViewModel<RecyclerViewComentariosViewModel>();
-
-        }
-
-
-
-
-
-
-        #endregion
+        public IMvxCommand ShowHomeCommand => new MvxCommand(() => ShowViewModel<HomeViewModel>());
+       
+        public IMvxCommand ShowEnviarComentarioCommand => new MvxCommand(() => ShowViewModel<EnviarComentarioViewModel>());
+        
+        public IMvxCommand ShowProgramacaoCommand => new MvxCommand(() => ShowViewModel<ViewPagerViewModel>());
+        
+        public IMvxCommand ShowMostrarComentariosCommand => new MvxCommand(() => ShowViewModel<MostrarComentariosViewModel>());
+               
     }
 }

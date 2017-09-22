@@ -9,6 +9,11 @@ using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 using MvvmCross.Platform.Platform;
 using xsinita.Utilities;
+using MvvmCross.Binding.Bindings.Target.Construction;
+using Refractored.Controls;
+using xsinita.MvxBindings;
+using xsinita.Core.Interfaces;
+using xsinita.Services;
 
 namespace xsinita
 {
@@ -58,6 +63,27 @@ namespace xsinita
             //picked up in the third view model
             Mvx.RegisterSingleton<MvxPresentationHint>(() => new MvxPanelPopToRootPresentationHint());
             return mvxFragmentsPresenter;
+        }
+
+        //Necessário para o IOC funcionar
+        protected override void InitializeFirstChance()
+        {
+            base.InitializeFirstChance();
+
+            Mvx.RegisterSingleton<IDialogService>(() => new DialogService());
+           
+        }
+
+        //Necessário para o picasso funcionar
+        protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry)
+        {
+            base.FillTargetFactories(registry);
+
+            registry.RegisterCustomBindingFactory<CircleImageView>("PicassoUrl",
+                                                 picassoView => new MvxPicassoUrlBinding(picassoView));
+
+            registry.RegisterCustomBindingFactory<CircleImageView>("PicassoDrawable",
+                                                 picassoView => new MvxPicassoDrawableBinding(picassoView));
         }
     }
 }

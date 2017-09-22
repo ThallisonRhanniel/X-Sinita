@@ -1,31 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_content"
+    android:id="@+id/main_content"        
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
         android:id="@+id/toolbarMain"
         layout="@layout/toolbar_actionbar" />
-    <android.support.v7.widget.CardView
-        android:layout_below="@+id/toolbarMain"
+        <android.support.v4.widget.NestedScrollView
+         android:layout_below="@+id/toolbarMain"
+         android:layout_width="match_parent"
+         android:id="@+id/NestedScroll"
+         local:layout_behavior="@string/appbar_scrolling_view_behavior"
+         android:layout_height="match_parent">  
+          <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+              <android.support.v7.widget.CardView
+        android:layout_below="@+id/NestedScroll"
         android:id="@+id/cardview_Main1"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:layout_marginLeft="10.0dp"
         android:layout_marginRight="10.0dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="20.0dp"
-        local:cardCornerRadius="12dp"
+        android:layout_marginTop="13.0dp"
+        local:cardCornerRadius="6dp"
         local:MvxBind="Click ShowFacebookCommand"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        local:cardElevation="8dp">
+        local:cardElevation="5dp">
         <RelativeLayout
             android:id="@+id/main_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="8.0dp">
+            android:layout_height="match_parent">
             <ImageView
                 android:layout_below="@+id/cardview_Main1"
                 android:id="@+id/imageFacebook"
@@ -33,7 +41,7 @@
                 android:layout_height="82.3dp"
                 android:src="@drawable/icon_home_face"
                 android:layout_marginTop="7.0dp"
-                android:layout_marginBottom="7.0dp" />
+                android:layout_marginBottom="5.0dp" />
             <View
                 android:layout_below="@+id/cardview_Main1"
                 android:layout_width="4.3dp"
@@ -59,7 +67,7 @@
                 android:layout_marginBottom="8.0dp" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
+              <android.support.v7.widget.CardView
         android:layout_below="@+id/cardview_Main1"
         android:id="@+id/cardview_Main2"
         android:layout_height="wrap_content"
@@ -67,17 +75,16 @@
         android:layout_marginLeft="10.0dp"
         android:layout_marginRight="10.0dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="20.0dp"
+        android:layout_marginTop="13.0dp"
         local:MvxBind="Click ShowInstagramCommand"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        local:cardCornerRadius="12dp"
-        local:cardElevation="8dp">
+        local:cardCornerRadius="6dp"
+        local:cardElevation="5dp">
         <RelativeLayout
             android:id="@+id/main_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="8.0dp">
+            android:layout_height="match_parent">
             <ImageView
                 android:layout_below="@+id/cardview_Main2"
                 android:id="@+id/imageInstagram"
@@ -85,7 +92,7 @@
                 android:layout_height="82.3dp"
                 android:src="@drawable/Icon_Home_Instagram"
                 android:layout_marginTop="7.0dp"
-                android:layout_marginBottom="7.0dp" />
+                android:layout_marginBottom="5.0dp" />
             <View
                 android:layout_below="@+id/cardview_Main2"
                 android:layout_width="4.3dp"
@@ -109,7 +116,7 @@
                 android:layout_marginRight="1.3dp" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
+              <android.support.v7.widget.CardView
         android:layout_below="@+id/cardview_Main2"
         android:id="@+id/cardview_Main3"
         android:layout_height="wrap_content"
@@ -117,17 +124,16 @@
         android:layout_marginLeft="10.0dp"
         android:layout_marginRight="10.0dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="20.0dp"
-        local:cardCornerRadius="12dp"
+        android:layout_marginTop="13.0dp"
+        local:cardCornerRadius="6dp"
         local:MvxBind="Click ShowLinkedinThallisonCommand"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        local:cardElevation="8dp">
+        local:cardElevation="5dp">
         <RelativeLayout
             android:id="@+id/main_content"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="8.0dp">
+            android:layout_height="match_parent">
             <ImageView
                 android:layout_below="@+id/cardview_Main3"
                 android:id="@+id/imageLinkedin"
@@ -135,7 +141,7 @@
                 android:layout_height="82.3dp"
                 android:src="@drawable/Icon_Home_Linkedin"
                 android:layout_marginTop="7.0dp"
-                android:layout_marginBottom="7.0dp" />
+                android:layout_marginBottom="5.0dp" />
             <View
                 android:layout_below="@+id/cardview_Main3"
                 android:layout_width="4.3dp"
@@ -173,68 +179,7 @@
                 android:layout_marginRight="1.3dp" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
-    <android.support.v7.widget.CardView
-        android:layout_below="@+id/cardview_Main3"
-        android:id="@+id/cardview_Main4"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:layout_marginLeft="10.0dp"
-        android:layout_marginRight="10.0dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="20.0dp"
-        local:cardCornerRadius="12dp"
-        local:MvxBind="Click ShowLinkedinDiorgelesCommand"
-        android:clickable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        local:cardElevation="8dp">
-        <RelativeLayout
-            android:id="@+id/main_content"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="8.0dp">
-            <ImageView
-                android:layout_below="@+id/cardview_Main4"
-                android:id="@+id/imageLinkedin2"
-                android:layout_width="100.0dp"
-                android:layout_height="82.3dp"
-                android:src="@drawable/Icon_Home_Linkedin"
-                android:layout_marginTop="7.0dp"
-                android:layout_marginBottom="7.0dp" />
-            <View
-                android:layout_below="@+id/cardview_Main3"
-                android:layout_width="4.3dp"
-                android:layout_height="79.3dp"
-                android:layout_toRightOf="@id/imageLinkedin2"
-                android:background="#1E90FF"
-                android:id="@+id/view4"
-                android:layout_marginTop="9.0dp" />
-            <TextView
-                android:text="Desenvolvedor de Software | Python &amp; Django"
-                android:layout_width="222.0dp"
-                android:layout_height="79.0dp"
-                android:layout_toRightOf="@id/view4"
-                android:id="@+id/textView1"
-                android:layout_below="@id/cardview_Main3"
-                android:textStyle="bold|italic"
-                android:textSize="16sp"
-                android:typeface="sans"
-                android:layout_marginTop="7.0dp"
-                android:layout_marginLeft="10.0dp"
-                android:layout_marginRight="1.3dp" />
-            <TextView
-                android:text="Diorgeles Dias"
-                android:layout_width="222.0dp"
-                android:layout_height="28.3dp"
-                android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
-                android:layout_toRightOf="@id/view4"
-                android:id="@+id/textNome2"
-                android:layout_below="@id/cardview_Main3"
-                android:textStyle="bold|italic"
-                android:textSize="16sp"
-                android:typeface="sans"
-                android:layout_marginTop="62.0dp"
-                android:layout_marginLeft="10.0dp"
-                android:layout_marginRight="1.3dp" />
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+           </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+  
 </RelativeLayout>

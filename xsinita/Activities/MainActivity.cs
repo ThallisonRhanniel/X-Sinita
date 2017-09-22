@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Views.InputMethods;
 using MvvmCross.Droid.Support.V7.AppCompat;
 using xsinita.Core.ViewModels.Base;
+using xsinita.Core.ViewModels.Programacao.ViewPager;
 
 
 namespace xsinita.Activities
@@ -17,8 +18,23 @@ namespace xsinita.Activities
         LaunchMode = LaunchMode.SingleTop,
         Name = "xsinita.activities.MainActivity"
     )]
-    public class MainActivity : MvxCachingFragmentCompatActivity<MainViewModel> //MvxCachingFragmentCompatActivity
+    public class MainActivity : MvxCachingFragmentCompatActivity<MainViewModel> 
     {
+
+        protected override void ShowFragment(
+            string tag,
+            int contentId,
+            Bundle bundle,
+            bool forceAddToBackStack = false,
+            bool forceReplaceFragment = false)
+        {
+            if (tag.Equals(typeof(ViewPagerViewModel).FullName))
+                forceReplaceFragment = true;
+
+            base.ShowFragment(tag, contentId, bundle, forceAddToBackStack, forceReplaceFragment);
+        }
+
+
         public DrawerLayout DrawerLayout;
 
         protected override void OnCreate(Bundle bundle)
@@ -70,14 +86,14 @@ namespace xsinita.Activities
             var adb = new AlertDialog.Builder(this);
             adb.SetTitle("Confirmação");
             adb.SetMessage("Olá! Antes de sair deixe um comentário sobre o Evento");
-            adb.SetPositiveButton("Sair", (sender, args) => { exit(); });
+            adb.SetPositiveButton("Sair", (sender, args) => { Exit(); });
             adb.SetNegativeButton("Cancelar ", (sender, args) => { });
             adb.SetNeutralButton("Comentar", (sender, args) => { ViewModel.ShowComentarCommand.Execute(); });
             adb.SetCancelable(false);
             adb.Create().Show();
         }
 
-        public void exit()
+        public void Exit()
         {
             Android.OS.Process.KillProcess(Android.OS.Process.MyPid());
         }

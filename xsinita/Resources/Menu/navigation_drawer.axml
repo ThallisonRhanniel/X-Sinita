@@ -8,19 +8,20 @@ xmlns:local="http://schemas.android.com/apk/res-auto">
         android:title="Início" />
   </group>
 
-  <item android:title="Programação">
-    <menu>
+  <!--  
+  <item android:title="">
+   <menu>
       <item
-          android:id="@+id/nav_palestras"
-          android:title="Palestras" />
-      <item
-        android:id="@+id/nav_minicurso"
-        android:title="Minicurso" />
-      <item
-       android:id="@+id/nav_workshops"
-       android:title="Workshops" />
+          android:id="@+id/nav_programacao"
+          android:title="Programação" />
     </menu>
   </item>
+  -->
+    <item
+        android:id="@+id/nav_programacao"
+        android:title="Programação" />
+   
+
 
  
   <group android:id="@+id/nav_footer">
