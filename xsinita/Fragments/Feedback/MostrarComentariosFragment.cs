@@ -16,7 +16,6 @@ namespace xsinita.Fragments.Feedback
     [Register("xsinita.fragments.Feedback.MostrarComentariosFragment")]
     public class MostrarComentariosFragment : BaseFragment<MostrarComentariosViewModel>
     {
-
         private View _view;
         private RecyclerView _recyclerView;
         private LinearLayoutManager _layoutManager;
@@ -25,9 +24,7 @@ namespace xsinita.Fragments.Feedback
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             ShowHamburgerMenu = true;
-            //var view = base.OnCreateView(inflater, container, savedInstanceState);
             _view = base.OnCreateView(inflater, container, savedInstanceState);
-
 
             _recyclerView = _view.FindViewById<MvxRecyclerView>(Resource.Id.my_recycler_view);
             if (_recyclerView != null)
@@ -42,10 +39,8 @@ namespace xsinita.Fragments.Feedback
             if (appBar != null)
                 appBar.OffsetChanged += (sender, args) => _swipeToRefresh.Enabled = args.VerticalOffset == 0;
             
-
             return _view;
         }
-
 
         protected override int FragmentId => Resource.Layout.fragment_feedback_comentarios;
 

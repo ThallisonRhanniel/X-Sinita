@@ -9,7 +9,7 @@ namespace xsinita.Services
 {
     public class DialogService : IDialogService
     {
-        static readonly IMvxAndroidCurrentTopActivity Top = Mvx.Resolve<IMvxAndroidCurrentTopActivity>();
+        private static readonly IMvxAndroidCurrentTopActivity Top = Mvx.Resolve<IMvxAndroidCurrentTopActivity>();
         private static readonly Activity _act = Top.Activity;
         readonly ProgressDialog _progress = new ProgressDialog(_act);
 
@@ -22,7 +22,7 @@ namespace xsinita.Services
             snackBar.Show();
         }
 
-        public void ShowProgessDialog()
+        public void ShowProgessDialog() // TODO: Atribuir a messagem na chamada do método.
         {
             _progress.Indeterminate = true;
             _progress.SetProgressStyle(ProgressDialogStyle.Spinner);

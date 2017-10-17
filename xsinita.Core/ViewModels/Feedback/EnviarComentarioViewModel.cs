@@ -14,7 +14,7 @@ namespace xsinita.Core.ViewModels.Feedback
 {
     public class EnviarComentarioViewModel : BaseViewModel
     {
-        private IDialogService _dialogService;
+        private readonly IDialogService _dialogService;
 
         public EnviarComentarioViewModel(IDialogService dialogService)
         {
@@ -51,12 +51,10 @@ namespace xsinita.Core.ViewModels.Feedback
 
         public IMvxAsyncCommand EviarComentarioCommand
         {
-            get { return new MvxAsyncCommand(async () => await EnviarComentario()); }
+            get { return new MvxAsyncCommand(async () => await EnviarComentarioAsync()); }
         }
 
-
-
-        private async Task<bool> EnviarComentario()
+        private async Task<bool> EnviarComentarioAsync()
         {
             try
             {

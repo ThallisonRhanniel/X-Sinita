@@ -12,14 +12,12 @@ namespace xsinita.Fragments.Feedback
     [Register("xsinita.fragments.Feedback.EnviarComentarioFragment")]
     public class EnviarComentarioFragment : BaseFragment<EnviarComentarioViewModel>
     {
-
         private View _view;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             ShowHamburgerMenu = true;
             _view = base.OnCreateView(inflater, container, savedInstanceState);
-
             return _view;
         }
 

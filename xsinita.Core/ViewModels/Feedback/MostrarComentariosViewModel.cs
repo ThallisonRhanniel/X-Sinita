@@ -19,13 +19,13 @@ namespace xsinita.Core.ViewModels.Feedback
             set { SetProperty(ref _itemsComentario, value); }
         }
 
-        public virtual async Task GetApiComentarios()
+        public virtual async Task GetApiComentariosAsync()
         {
             try
             {
                 var geturi = new Uri("http://www.mocky.io/v2/59c1c8451300001b08d29e7c"); // Api provisória
                 var httpClient = new HttpClient();
-                //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "4244d467830793d8397eecca0566130d3d957ba1");
+                //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "Your Token");
                 var downloadTask = await httpClient.GetAsync(geturi);
                 var responseGet = await downloadTask.Content.ReadAsStringAsync();
                 var listIncritos = JsonConvert.DeserializeObject<ListComentario>(responseGet);
@@ -46,6 +46,7 @@ namespace xsinita.Core.ViewModels.Feedback
             }
             catch (Exception)
             {
+                //TODO: Adicionar mensagem em caso de falha.
             }
 
         }
@@ -66,7 +67,7 @@ namespace xsinita.Core.ViewModels.Feedback
                 return new MvxCommand(async () =>
                 {
                     IsRefreshing = true;
-                    await GetApiComentarios();
+                    await GetApiComentariosAsync();
                     IsRefreshing = false;
                 });
             }

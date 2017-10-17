@@ -17,12 +17,14 @@ namespace xsinita.Fragments.Programacao.ViewPager
     [Register("xsinita.fragments.programacao.ViewPager")]
     public class ViewPagerProgramacao : BaseFragment<ViewPagerViewModel>
     {
+        private View _view;
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             ShowHamburgerMenu = true;
-            var view = base.OnCreateView(inflater, container, savedInstanceState);
+            _view = base.OnCreateView(inflater, container, savedInstanceState);
 
-            var viewPager = view.FindViewById<Android.Support.V4.View.ViewPager>(Resource.Id.viewpager);
+            var viewPager = _view.FindViewById<Android.Support.V4.View.ViewPager>(Resource.Id.viewpager);
             if (viewPager != null)
             {
                 var fragments = new List<MvxCachingFragmentStatePagerAdapter.FragmentInfo>
@@ -34,10 +36,10 @@ namespace xsinita.Fragments.Programacao.ViewPager
                 viewPager.Adapter = new MvxCachingFragmentStatePagerAdapter(Activity, ChildFragmentManager, fragments);
             }
 
-            var tabLayout = view.FindViewById<TabLayout>(Resource.Id.tabs);
+            var tabLayout = _view.FindViewById<TabLayout>(Resource.Id.tabs);
             tabLayout.SetupWithViewPager(viewPager);
 
-            return view;
+            return _view;
         }
 
         protected override int FragmentId => Resource.Layout.fragment_viewpager;

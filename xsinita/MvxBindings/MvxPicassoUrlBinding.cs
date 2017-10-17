@@ -13,8 +13,8 @@ namespace xsinita.MvxBindings
     [Preserve(AllMembers = true)]
     public class MvxPicassoUrlBinding : MvxAndroidTargetBinding
     {
-        static readonly IMvxAndroidCurrentTopActivity _top = Mvx.Resolve<IMvxAndroidCurrentTopActivity>();
-        private readonly Activity _act = _top.Activity;
+        private static readonly IMvxAndroidCurrentTopActivity Top = Mvx.Resolve<IMvxAndroidCurrentTopActivity>();
+        private readonly Activity _act = Top.Activity;
 
         public MvxPicassoUrlBinding(object target) : base(target)
         {

@@ -7,7 +7,6 @@ using Android.Views;
 using MvvmCross.Droid.Shared.Attributes;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Droid.Support.V7.RecyclerView;
-
 using xsinita.Core.ViewModels.Base;
 using xsinita.Core.ViewModels.Programacao.Pages;
 using xsinita.Fragments.Base;
@@ -27,9 +26,7 @@ namespace xsinita.Fragments.Programacao.Pages
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             ShowHamburgerMenu = true;
-            //var view = base.OnCreateView(inflater, container, savedInstanceState);
             _view = base.OnCreateView(inflater, container, savedInstanceState);
-
 
             _recyclerView = _view.FindViewById<MvxRecyclerView>(Resource.Id.my_recycler_view);
             if (_recyclerView != null)
@@ -43,10 +40,8 @@ namespace xsinita.Fragments.Programacao.Pages
             _swipeToRefresh.SetColorSchemeColors(Color.Red.ToArgb(), Color.Blue.ToArgb(), Color.Green.ToArgb(), Color.Gold.ToArgb());
             var appBar = Activity.FindViewById<AppBarLayout>(Resource.Id.appbar);
             if (appBar != null)
-            {
                 appBar.OffsetChanged += (sender, args) => _swipeToRefresh.Enabled = args.VerticalOffset == 0;
-            }
-
+            
             return _view;
         }
 
