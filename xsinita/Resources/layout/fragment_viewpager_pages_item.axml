@@ -28,7 +28,7 @@
         android:layout_marginTop="15dp" />
   <!-- local:MvxBind="DrawableName iconUrl" -->
     <TextView
-        android:text="CObra para lixoso"
+        android:text="teste teste teste"
         local:MvxBind="Text temaProgramacao" 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="13.3dp" />
     <TextView
-        android:text="Diorgeles Chupa taca"
+        android:text="teste teste teste"
         local:MvxBind="Text apresentadorProgramacao" 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

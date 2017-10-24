@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -23,29 +24,29 @@ namespace xsinita.Core.ViewModels.Feedback
         {
             try
             {
-                var geturi = new Uri("http://www.mocky.io/v2/59c1c8451300001b08d29e7c"); // Api provisória
+                var geturi = new Uri("https://sinita-api.herokuapp.com/v1/comments"); // Api provisória http://192.168.0.108:8000/v1/comments/
                 var httpClient = new HttpClient();
                 //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "Your Token");
                 var downloadTask = await httpClient.GetAsync(geturi);
                 var responseGet = await downloadTask.Content.ReadAsStringAsync();
-                var listIncritos = JsonConvert.DeserializeObject<ListComentario>(responseGet);
-                //dynamic listIncritos = JsonConvert.DeserializeObject<List<dynamic>>(responseGet);
+                var listComentario = JsonConvert.DeserializeObject<List<Cometarios>>(responseGet);
                 ItemsComentarios.Clear();
-
-                foreach (var inscritos in listIncritos.ListCometario)
+                foreach (var comentario in listComentario) //listIncritos.ListCometario
                 {
                     ItemsComentarios.Add(new Cometarios()
                     {
-                        iconUrl = inscritos.iconUrl,
-                        apresentadorProgramacao = inscritos.apresentadorProgramacao,
-                        temaProgramacao = inscritos.temaProgramacao,
-                        textoProgramacao = inscritos.textoProgramacao
+                        name = comentario.name,
+                        icon_perfil = comentario.icon_perfil,
+                        category = comentario.category,
+                        comment = comentario.comment,
+                        comment_time = comentario.comment_time
                     });
                 }
                 IsRefreshing = false;
             }
-            catch (Exception)
+            catch (Exception message)
             {
+                var oi = message;
                 //TODO: Adicionar mensagem em caso de falha.
             }
 

@@ -2,9 +2,10 @@
 {
     public class Cometarios
     {
-        public string iconUrl { get; set; }
-        public string apresentadorProgramacao { get; set; }
-        public string temaProgramacao { get; set; }
-        public string textoProgramacao { get; set; }
+        public string name { get; set; }
+        public string icon_perfil { get; set; }
+        public string category { get; set; }
+        public string comment { get; set; }
+        public string comment_time { get; set; }
     }
 }

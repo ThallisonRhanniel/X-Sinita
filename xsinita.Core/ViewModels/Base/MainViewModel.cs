@@ -7,6 +7,8 @@ namespace xsinita.Core.ViewModels.Base
 {
     public class MainViewModel : BaseViewModel
     {
+
+
         public void ShowMenu() // Chama duas ViewModels porque inicia 2 fragmentos. O menu e o home;
         {
             ShowViewModel<HomeViewModel>();

@@ -2,6 +2,7 @@
 using Android.App;
 using Android.Runtime;
 using Com.Squareup.Picasso;
+using Java.IO;
 using MvvmCross.Binding.Droid.Target;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
@@ -28,7 +29,12 @@ namespace xsinita.MvxBindings
         {
             if (value == null) return;
             var circleView = (CircleImageView)target;
-            var imagem = _act.Resources.GetIdentifier(Convert.ToString(value), "drawable", _act.PackageName);
+            dynamic imagem = null;
+
+            if (value.ToString().StartsWith("/"))
+                imagem = new File(value.ToString());  //Se for a imagem da galeria.
+            else
+                imagem = _act.Resources.GetIdentifier(value.ToString(), "drawable", _act.PackageName);
             Picasso.With(_act)
                 .Load(imagem)
                 .Resize(300, 200)

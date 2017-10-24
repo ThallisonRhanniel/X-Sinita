@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using MvvmCross.Core.ViewModels;
-using Newtonsoft.Json;
 using xsinita.Core.Interfaces;
 using xsinita.Core.ViewModels.Base;
 
@@ -14,11 +7,13 @@ namespace xsinita.Core.ViewModels.Feedback
 {
     public class EnviarComentarioViewModel : BaseViewModel
     {
-        private readonly IDialogService _dialogService;
+        public readonly IDialogService _dialogService;
+        private readonly IPickImageService _pickImageService;
 
-        public EnviarComentarioViewModel(IDialogService dialogService)
+        public EnviarComentarioViewModel(IDialogService dialogService, IPickImageService pickImageService)
         {
             _dialogService = dialogService;
+            _pickImageService = pickImageService;
         }
 
         private string _nome = "";
@@ -42,6 +37,13 @@ namespace xsinita.Core.ViewModels.Feedback
             set { SetProperty(ref _selecItemSpinner, value); }
         }
 
+        private bool _clickButton = false;
+        public bool ClickButton
+        {
+            get { return _clickButton; }
+            set { SetProperty(ref _clickButton, value); }
+        }
+
         static List<string> _itemSpinner = new List<string>() { "Evento", "Minicurso", "Workshop", "Palestra" };
         public List<string> ItemSpinner
         {
@@ -49,55 +51,21 @@ namespace xsinita.Core.ViewModels.Feedback
             set { SetProperty(ref _itemSpinner, value); }
         }
 
-        public IMvxAsyncCommand EviarComentarioCommand
+        public IMvxCommand EviarComentarioCommand
         {
-            get { return new MvxAsyncCommand(async () => await EnviarComentarioAsync()); }
-        }
-
-        private async Task<bool> EnviarComentarioAsync()
-        {
-            try
+            get { return new MvxCommand(() =>
             {
-                _dialogService.ShowProgessDialog();
-                var requestUri = new Uri("Your Api");
-                dynamic dynamicJson = new ExpandoObject();
-                dynamicJson.token = "Your Token";
-                dynamicJson.user = "thallison";
-                if (Nome == string.Empty)
-                    Nome = "Anônimo";
-                
-                dynamicJson.nome = Nome;
-                dynamicJson.assunto = SelectemSpinner;
-                dynamicJson.texto = Comentario;
-
-                var json = JsonConvert.SerializeObject(dynamicJson);
-                var objClint = new HttpClient();
-
-                StringContent dados = new StringContent(json, Encoding.UTF8, "application/json");
-
-                var response = await objClint.PostAsync(requestUri, dados);
-                IEnumerable<string> values;
-                if (response.Headers.TryGetValues("message_erro", out values))
+                if (Nome == string.Empty || Comentario == string.Empty)
                 {
-                    var message = values.First();
-                    _dialogService.ShowSnackbar("Erro, verifique a conexção com a internet");
-                    _dialogService.DismissProgessDialog();
-                    return false;
+                    _dialogService.ShowSnackbar("Adicione um Nome e Comentário.");
                 }
                 else
                 {
-                    _dialogService.ShowSnackbar("Comentário enviado com sucesso");
-                    _dialogService.DismissProgessDialog();
-                    return true;
+                    _dialogService.ShowProgessDialog();
+                    ClickButton = true;
                 }
-            }
-            catch (Exception)
-            {
-                _dialogService.ShowSnackbar("Erro, verifique a conexção com a internet");
-                _dialogService.DismissProgessDialog();
-                return false;
-            }
-
+                
+            });}
         }
     }
 }

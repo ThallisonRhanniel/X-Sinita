@@ -71,7 +71,8 @@ namespace xsinita
             base.InitializeFirstChance();
 
             Mvx.RegisterSingleton<IDialogService>(() => new DialogService());
-           
+            Mvx.RegisterSingleton<IPickImageService>(() => new PickImageService());
+
         }
 
         //Necessário para o picasso funcionar

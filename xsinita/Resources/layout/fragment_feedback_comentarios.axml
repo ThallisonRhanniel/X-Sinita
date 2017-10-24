@@ -16,6 +16,7 @@
             android:scrollbars="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/home_page_gray"
             local:MvxItemTemplate="@layout/fragment_feedback_comentarios_item"
             local:MvxBind="ItemsSource ItemsComentarios; ItemClick ItemSelected" />
     </MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout>

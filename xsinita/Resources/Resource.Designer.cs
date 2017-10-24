@@ -5727,8 +5727,8 @@ namespace xsinita
 			// aapt resource value: 0x7f080010
 			public const int MvxBindingTagUnique = 2131230736;
 			
-			// aapt resource value: 0x7f080094
-			public const int NestedScroll = 2131230868;
+			// aapt resource value: 0x7f080095
+			public const int NestedScroll = 2131230869;
 			
 			// aapt resource value: 0x7f0800ac
 			public const int action0 = 2131230892;
@@ -5826,14 +5826,14 @@ namespace xsinita
 			// aapt resource value: 0x7f08008d
 			public const int cardview_Main = 2131230861;
 			
-			// aapt resource value: 0x7f080095
-			public const int cardview_Main1 = 2131230869;
+			// aapt resource value: 0x7f080096
+			public const int cardview_Main1 = 2131230870;
 			
-			// aapt resource value: 0x7f080099
-			public const int cardview_Main2 = 2131230873;
+			// aapt resource value: 0x7f08009a
+			public const int cardview_Main2 = 2131230874;
 			
-			// aapt resource value: 0x7f08009c
-			public const int cardview_Main3 = 2131230876;
+			// aapt resource value: 0x7f08009d
+			public const int cardview_Main3 = 2131230877;
 			
 			// aapt resource value: 0x7f080032
 			public const int center = 2131230770;
@@ -5961,20 +5961,17 @@ namespace xsinita
 			// aapt resource value: 0x7f080048
 			public const int image = 2131230792;
 			
-			// aapt resource value: 0x7f080096
-			public const int imageFacebook = 2131230870;
+			// aapt resource value: 0x7f080097
+			public const int imageFacebook = 2131230871;
 			
-			// aapt resource value: 0x7f08009a
-			public const int imageInstagram = 2131230874;
+			// aapt resource value: 0x7f08009b
+			public const int imageInstagram = 2131230875;
 			
-			// aapt resource value: 0x7f08009d
-			public const int imageLinkedin = 2131230877;
+			// aapt resource value: 0x7f08009e
+			public const int imageLinkedin = 2131230878;
 			
 			// aapt resource value: 0x7f08008e
 			public const int imagePerfil = 2131230862;
-			
-			// aapt resource value: 0x7f0800a1
-			public const int image_view_row_icon = 2131230881;
 			
 			// aapt resource value: 0x7f0800b6
 			public const int info = 2131230902;
@@ -6000,8 +5997,8 @@ namespace xsinita
 			// aapt resource value: 0x7f08004a
 			public const int list_item = 2131230794;
 			
-			// aapt resource value: 0x7f080092
-			public const int main_content = 2131230866;
+			// aapt resource value: 0x7f080093
+			public const int main_content = 2131230867;
 			
 			// aapt resource value: 0x7f080076
 			public const int main_frame = 2131230838;
@@ -6048,8 +6045,8 @@ namespace xsinita
 			// aapt resource value: 0x7f080081
 			public const int navigation_header_container = 2131230849;
 			
-			// aapt resource value: 0x7f0800a0
-			public const int navigation_view = 2131230880;
+			// aapt resource value: 0x7f0800a1
+			public const int navigation_view = 2131230881;
 			
 			// aapt resource value: 0x7f080028
 			public const int never = 2131230760;
@@ -6219,8 +6216,8 @@ namespace xsinita
 			// aapt resource value: 0x7f0800bc
 			public const int text2 = 2131230908;
 			
-			// aapt resource value: 0x7f08009f
-			public const int textNome = 2131230879;
+			// aapt resource value: 0x7f0800a0
+			public const int textNome = 2131230880;
 			
 			// aapt resource value: 0x7f080054
 			public const int textSpacerNoButtons = 2131230804;
@@ -6230,6 +6227,9 @@ namespace xsinita
 			
 			// aapt resource value: 0x7f080091
 			public const int textView1 = 2131230865;
+			
+			// aapt resource value: 0x7f080092
+			public const int textView2 = 2131230866;
 			
 			// aapt resource value: 0x7f0800a2
 			public const int text_container = 2131230882;
@@ -6264,8 +6264,8 @@ namespace xsinita
 			// aapt resource value: 0x7f0800a6
 			public const int toolbar = 2131230886;
 			
-			// aapt resource value: 0x7f080093
-			public const int toolbarMain = 2131230867;
+			// aapt resource value: 0x7f080094
+			public const int toolbarMain = 2131230868;
 			
 			// aapt resource value: 0x7f08002b
 			public const int top = 2131230763;
@@ -6285,8 +6285,8 @@ namespace xsinita
 			// aapt resource value: 0x7f080090
 			public const int txtApresentador = 2131230864;
 			
-			// aapt resource value: 0x7f080098
-			public const int txtFacebook = 2131230872;
+			// aapt resource value: 0x7f080099
+			public const int txtFacebook = 2131230873;
 			
 			// aapt resource value: 0x7f08008f
 			public const int txtTema = 2131230863;
@@ -6297,14 +6297,14 @@ namespace xsinita
 			// aapt resource value: 0x7f08001a
 			public const int useLogo = 2131230746;
 			
-			// aapt resource value: 0x7f080097
-			public const int view1 = 2131230871;
+			// aapt resource value: 0x7f080098
+			public const int view1 = 2131230872;
 			
-			// aapt resource value: 0x7f08009b
-			public const int view2 = 2131230875;
+			// aapt resource value: 0x7f08009c
+			public const int view2 = 2131230876;
 			
-			// aapt resource value: 0x7f08009e
-			public const int view3 = 2131230878;
+			// aapt resource value: 0x7f08009f
+			public const int view3 = 2131230879;
 			
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;

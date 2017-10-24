@@ -1,11 +1,13 @@
 ﻿using System;
 using Android.App;
+using Android.Net;
 using Android.Runtime;
 using MvvmCross.Binding.Droid.Target;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 using Refractored.Controls;
 using Com.Squareup.Picasso;
+using Java.IO;
 
 
 namespace xsinita.MvxBindings
@@ -29,12 +31,12 @@ namespace xsinita.MvxBindings
         {
             if (value == null) return;
             var circleView = (CircleImageView)target;
-            var imagem = value.ToString();
             Picasso.With(_act)
-                .Load(imagem)
+                .Load(value.ToString())
                 .Resize(300, 200)
                 .CenterInside()
                 .Into(circleView);
         }
+       
     }
 }
