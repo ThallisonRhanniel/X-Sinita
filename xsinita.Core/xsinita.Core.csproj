@@ -38,7 +38,7 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Interfaces\IDialogService.cs" />
-    <Compile Include="Interfaces\IPickImageService.cs" />
+    <Compile Include="Interfaces\IPostService.cs" />
     <Compile Include="Models\Cometarios.cs" />
     <Compile Include="Models\ListComentario.cs" />
     <Compile Include="Models\Programacao.cs" />

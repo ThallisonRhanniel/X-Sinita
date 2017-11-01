@@ -71,7 +71,7 @@ namespace xsinita
             base.InitializeFirstChance();
 
             Mvx.RegisterSingleton<IDialogService>(() => new DialogService());
-            Mvx.RegisterSingleton<IPickImageService>(() => new PickImageService());
+            Mvx.RegisterSingleton<IPostService>(() => new PostService());
 
         }
 

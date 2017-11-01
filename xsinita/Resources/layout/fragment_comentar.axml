@@ -34,7 +34,7 @@
    <Mvx.MvxSpinner
             android:id="@+id/spinnerAssuntos"
             android:layout_width="match_parent"
-            local:MvxBind="ItemsSource ItemSpinner;SelectedItem SelectemSpinner"
+            local:MvxBind="ItemsSource ItemSpinner;SelectedItem SelecItemSpinner"
             android:layout_height="40.0dp"
             android:layout_marginLeft="@dimen/element_margin_small"
             android:layout_marginRight="@dimen/element_margin_small"

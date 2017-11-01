@@ -7,13 +7,13 @@ namespace xsinita.Core.ViewModels.Feedback
 {
     public class EnviarComentarioViewModel : BaseViewModel
     {
-        public readonly IDialogService _dialogService;
-        private readonly IPickImageService _pickImageService;
+        private readonly IDialogService _iDialogService;
+        private readonly IPostService _iPostService;
 
-        public EnviarComentarioViewModel(IDialogService dialogService, IPickImageService pickImageService)
+        public EnviarComentarioViewModel(IDialogService iDialogService, IPostService iPostService)
         {
-            _dialogService = dialogService;
-            _pickImageService = pickImageService;
+            _iDialogService = iDialogService;
+            _iPostService = iPostService;
         }
 
         private string _nome = "";
@@ -31,18 +31,13 @@ namespace xsinita.Core.ViewModels.Feedback
         }
 
         private string _selecItemSpinner = "";
-        public string SelectemSpinner
+        public string SelecItemSpinner
         {
             get { return _selecItemSpinner; }
             set { SetProperty(ref _selecItemSpinner, value); }
         }
 
-        private bool _clickButton = false;
-        public bool ClickButton
-        {
-            get { return _clickButton; }
-            set { SetProperty(ref _clickButton, value); }
-        }
+        
 
         static List<string> _itemSpinner = new List<string>() { "Evento", "Minicurso", "Workshop", "Palestra" };
         public List<string> ItemSpinner
@@ -53,18 +48,19 @@ namespace xsinita.Core.ViewModels.Feedback
 
         public IMvxCommand EviarComentarioCommand
         {
-            get { return new MvxCommand(() =>
+            get { return new MvxCommand(async () =>
             {
                 if (Nome == string.Empty || Comentario == string.Empty)
                 {
-                    _dialogService.ShowSnackbar("Adicione um Nome e Comentário.");
+                    _iDialogService.ShowSnackbar("Adicione um Nome e Comentário.");
                 }
                 else
                 {
-                    _dialogService.ShowProgessDialog();
-                    ClickButton = true;
+                    _iDialogService.ShowProgessDialog();
+                    var mensagem = await _iPostService.EnviarDadosAsync(Nome, SelecItemSpinner, Comentario);
+                    _iDialogService.DismissProgessDialog();
+                    _iDialogService.ShowSnackbar(mensagem);
                 }
-                
             });}
         }
     }

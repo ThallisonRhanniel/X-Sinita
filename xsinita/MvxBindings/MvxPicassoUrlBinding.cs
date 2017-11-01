@@ -1,13 +1,11 @@
 ﻿using System;
 using Android.App;
-using Android.Net;
 using Android.Runtime;
 using MvvmCross.Binding.Droid.Target;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 using Refractored.Controls;
 using Com.Squareup.Picasso;
-using Java.IO;
 
 
 namespace xsinita.MvxBindings

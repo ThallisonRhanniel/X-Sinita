@@ -24,7 +24,7 @@ namespace xsinita.Core.ViewModels.Feedback
         {
             try
             {
-                var geturi = new Uri("https://sinita-api.herokuapp.com/v1/comments"); // Api provisória http://192.168.0.108:8000/v1/comments/
+                var geturi = new Uri("http://192.168.0.108:8000/v1/comments/"); // https://sinita-api.herokuapp.com/v1/comments
                 var httpClient = new HttpClient();
                 //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "Your Token");
                 var downloadTask = await httpClient.GetAsync(geturi);
@@ -39,7 +39,7 @@ namespace xsinita.Core.ViewModels.Feedback
                         icon_perfil = comentario.icon_perfil,
                         category = comentario.category,
                         comment = comentario.comment,
-                        comment_time = comentario.comment_time
+                        created = comentario.created
                     });
                 }
                 IsRefreshing = false;
