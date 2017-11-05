@@ -1,4 +1,5 @@
-﻿using Android.OS;
+﻿using Android.Graphics;
+using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Support.V7.Widget;
@@ -35,6 +36,7 @@ namespace xsinita.Fragments.Feedback
             }
 
             _swipeToRefresh = _view.FindViewById<MvxSwipeRefreshLayout>(Resource.Id.refresher);
+            _swipeToRefresh.SetColorSchemeColors(Color.Red.ToArgb(), Color.Blue.ToArgb(), Color.Green.ToArgb(), Color.Gold.ToArgb());
             var appBar = Activity.FindViewById<AppBarLayout>(Resource.Id.appbar);
             if (appBar != null)
                 appBar.OffsetChanged += (sender, args) => _swipeToRefresh.Enabled = args.VerticalOffset == 0;

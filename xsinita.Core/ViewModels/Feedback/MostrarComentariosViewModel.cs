@@ -6,13 +6,23 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using Newtonsoft.Json;
+using xsinita.Core.Interfaces;
 using xsinita.Core.Models;
 using xsinita.Core.ViewModels.Base;
+using System.Net.Http.Headers;
 
 namespace xsinita.Core.ViewModels.Feedback
 {
     public class MostrarComentariosViewModel : BaseViewModel
     {
+        private readonly IDialogService _iDialogService;
+        
+
+        public MostrarComentariosViewModel(IDialogService iDialogService)
+        {
+            _iDialogService = iDialogService;
+        }
+
         private ObservableCollection<Cometarios> _itemsComentario = new MvxObservableCollection<Cometarios>();
         public ObservableCollection<Cometarios> ItemsComentarios
         {
@@ -26,12 +36,12 @@ namespace xsinita.Core.ViewModels.Feedback
             {
                 var geturi = new Uri("http://192.168.0.108:8000/v1/comments/"); // https://sinita-api.herokuapp.com/v1/comments
                 var httpClient = new HttpClient();
-                //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "Your Token");
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "2c67cd4daedbf1b5a5ff40fe07f669c142f41ecc");
                 var downloadTask = await httpClient.GetAsync(geturi);
                 var responseGet = await downloadTask.Content.ReadAsStringAsync();
                 var listComentario = JsonConvert.DeserializeObject<List<Cometarios>>(responseGet);
                 ItemsComentarios.Clear();
-                foreach (var comentario in listComentario) //listIncritos.ListCometario
+                foreach (var comentario in listComentario)
                 {
                     ItemsComentarios.Add(new Cometarios()
                     {
@@ -47,7 +57,8 @@ namespace xsinita.Core.ViewModels.Feedback
             catch (Exception message)
             {
                 var oi = message;
-                //TODO: Adicionar mensagem em caso de falha.
+                _iDialogService.ShowSnackbarCoordinatorLayout(
+                    "Incapaz de carregar o comentários, verifique sua conexão com a internet.");
             }
 
         }

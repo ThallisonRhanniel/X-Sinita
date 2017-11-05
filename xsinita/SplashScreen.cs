@@ -5,7 +5,7 @@ using MvvmCross.Droid.Views;
 namespace xsinita
 {
     [Activity(
-        Label = "X Sinita"
+        Label = "XI Sinita"
         , MainLauncher = true
         , Icon = "@drawable/icon"
         , Theme = "@style/Theme.Splash"

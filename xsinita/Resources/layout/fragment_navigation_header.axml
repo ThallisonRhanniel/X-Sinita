@@ -30,7 +30,7 @@
             android:textSize="@dimen/text_medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="X Sinita inicia em: 24/10/2016" />
+            android:text="XI Sinita inicia em: 05/11/2017" />
         <TextView
             android:id="@+id/text_view_username"
             android:singleLine="true"

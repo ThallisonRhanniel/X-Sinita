@@ -14,6 +14,7 @@ using Refractored.Controls;
 using xsinita.MvxBindings;
 using xsinita.Core.Interfaces;
 using xsinita.Services;
+using Android.Widget;
 
 namespace xsinita
 {
@@ -85,6 +86,9 @@ namespace xsinita
 
             registry.RegisterCustomBindingFactory<CircleImageView>("PicassoDrawable",
                                                  picassoView => new MvxPicassoDrawableBinding(picassoView));
+
+            registry.RegisterCustomBindingFactory<ImageView>("PicassoDrawableHome",
+                                                 picassoView => new MvxPicassoDrawableBindingHome(picassoView));
         }
     }
 }

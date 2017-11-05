@@ -2,9 +2,9 @@
 <resources>
 
   <!-- General colors -->
-  <color name="colorPrimary">#9C27B0</color>
-  <color name="colorPrimaryDark">#7B1FA2</color>
-  <color name="colorAccent">#7C4DFF</color>
+  <color name="colorPrimary">#F7431E</color>
+  <color name="colorPrimaryDark">#bf360c</color>
+  <color name="colorAccent">#01A89E</color>
 
   <!-- White to Black -->
   <color name="white">#FFFFFF</color>

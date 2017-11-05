@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
@@ -36,7 +37,7 @@ namespace xsinita.Services
 
                          var url = "http://192.168.0.108:8000/v1/comments/";  //https://sinita-api.herokuapp.com/v1/comments
 
-                         //httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "Your Token");
+                         httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "2c67cd4daedbf1b5a5ff40fe07f669c142f41ecc");
                          MultipartFormDataContent form = new MultipartFormDataContent();
 
                          FileStream fs = File.OpenRead(filePath);
@@ -53,8 +54,8 @@ namespace xsinita.Services
                          form.Add(categoryContent, "category");
                          form.Add(commentContent, "comment");
                          form.Add(iconPerfilContent, "icon_perfil");
-                         form.Add(imageContent, "imagem", Path.GetFileName(filePath));
-
+                         form.Add(imageContent, "imagem", Regex.Replace(Path.GetFileName(filePath), "[-$#/|&_()123456789 ]", ""));
+                         
                          var response = httpClient.PostAsync(url, form).Result;
                          if (response.StatusCode == (HttpStatusCode)201)
                              return _returnMessage = "Comentário enviando com Sucesso";

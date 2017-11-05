@@ -12,24 +12,34 @@ namespace xsinita.Core.Utilities
         {
             new Programacao()
             {
-                iconUrl = "@drawable/icon_perfil_batman",
-                apresentadorProgramacao = "Bruce Wayne ",
-                temaProgramacao = "The Dark Knight",
-                textoProgramacao = "Batman é um personagem fictício, um super-herói da banda desenhada americana publicada pela DC Comics. Foi criado pelo escritor Bill Finger e pelo artista Bob Kane, e apareceu pela primeira vez na revista Detective Comics #27 (Maio de 1939)."
+                iconUrl = "@drawable/icon_minicurso_diorgeles",
+                apresentadorProgramacao = "Diorgeles Dias Lima",
+                temaProgramacao = "Desenvolvimento Web com Python Django + Git +Heroku",
+                textoProgramacao = "Local: FTC - SALA 306 \r\nDia: 09/11 e 10/11 \r\nHorário: 19:00 às 21:45",
+                apresentadorSite = "https://www.linkedin.com/in/diorgelesdias/"
             },
             new Programacao()
             {
-                iconUrl = "@drawable/icon_perfil_stormtroopers",
-                apresentadorProgramacao = "Stormtroopers",
-                temaProgramacao = "Como ser um sniper",
-                textoProgramacao = "Stormtroopers, conhecidos por suas complexas, úteis e distinitas armaduras brancas, bem como suas impecáveis armas de paintball com mira 'impecável', os primeiros a serem explodidos e também os primeiros a pedir trégua, já que quase nunca Darth Vader os ajuda"
+                iconUrl = "@drawable/icon_minicurso_gustavo",
+                apresentadorProgramacao = "Luiz Gustavo S. Mafra",
+                temaProgramacao = "Introdução ao PHP com Yii Framework",
+                textoProgramacao = "Local: FTC - SALA 311 \r\nDia: 09/11 e 10/11 \r\nHorário: 19:00 às 21:45",
+                apresentadorSite = "https://www.linkedin.com/in/lgmafra/"
             },
             new Programacao()
             {
-                iconUrl = "@drawable/icon_perfil_mario",
-                apresentadorProgramacao = "It's me Mario",
-                temaProgramacao = "Como é ser irmão do Mario Verde",
-                textoProgramacao = "Mario (マリオ, Mario?) é um personagem fictício da franquia e série de jogos eletrônicos Mario da Nintendo, criado pelo desenvolvedor e designer de jogos eletrônicos japonês Shigeru Miyamoto. Servindo como mascote da Nintendo e protagonista homônimo da série, Mario já apareceu em mais de 200 jogos desde sua criação."
+                iconUrl = "@drawable/icon_minicurso_rogerio",
+                apresentadorProgramacao = "Rogério Martins Góis",
+                temaProgramacao = "Redes ópticas na tecnologia FTTx e suas aplicações",
+                textoProgramacao = "Local: AFI - SALA 103 \r\nDia: 09/11 \r\nHorário: 19:00 às 21:45"
+            },
+            new Programacao()
+            {
+                iconUrl = "@drawable/icon_minicurso_artur",
+                apresentadorProgramacao = "Artur Olsen Silva Côrtes",
+                temaProgramacao = "Pentest com Kali Linux",
+                textoProgramacao = "Local: FTC - SALA 309 \r\nDia: 10/11 \r\nHorário: 19:00 às 21:45",
+                apresentadorSite = "https://www.facebook.com/artur.olsensilvacortes?ref=br_rs"
             }
         });
         #endregion
@@ -39,17 +49,43 @@ namespace xsinita.Core.Utilities
         {
             new Programacao()
             {
-                iconUrl = "@drawable/icon_perfil_batman",
-                apresentadorProgramacao = "Bruce Wayne ",
-                temaProgramacao = "The Dark Knight",
-                textoProgramacao = "Batman é um personagem fictício, um super-herói da banda desenhada americana publicada pela DC Comics. Foi criado pelo escritor Bill Finger e pelo artista Bob Kane, e apareceu pela primeira vez na revista Detective Comics #27 (Maio de 1939)."
+                iconUrl = "@drawable/icon_palestra_alvaro",
+                apresentadorProgramacao = "Dr. Álvaro Vinícius de Souza Coelho",
+                temaProgramacao = "Possibilidades profissionais na área da computação",
+                textoProgramacao = "Local: AUDITÓRIO – FTC \r\nDia: 06/11  \r\nHorário: 20:30 às 21:45",
+                apresentadorSite = "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4751050T5"
             },
             new Programacao()
             {
-                iconUrl = "@drawable/icon_perfil_stormtroopers",
-                apresentadorProgramacao = "Stormtroopers",
-                temaProgramacao = "Como ser um sniper",
-                textoProgramacao = "Stormtroopers, conhecidos por suas complexas, úteis e distinitas armaduras brancas, bem como suas impecáveis armas de paintball com mira 'impecável', os primeiros a serem explodidos e também os primeiros a pedir trégua, já que quase nunca Darth Vader os ajuda"
+                iconUrl = "@drawable/icon_palestra_leizer",
+                apresentadorProgramacao = "Dr. Leizer Schnitman",
+                temaProgramacao = "Inteligência Artificial",
+                textoProgramacao = "Local: AUDITÓRIO – FTC \r\nDia: 07/11  \r\nHorário: 19:00 às 20:30",
+                apresentadorSite = "http://lattes.cnpq.br/0473342349140026"
+            },
+            new Programacao()
+            {
+                iconUrl = "@drawable/icon_palestra_achilles",
+                apresentadorProgramacao = "Achilles Fróes",
+                temaProgramacao = "Windows IoT Edition",
+                textoProgramacao = "Local: AUDITÓRIO – FTC \r\nDia: 07/11  \r\nHorário: 20:30 às 21:45",
+                apresentadorSite = "https://www.linkedin.com/in/achillesfroes/"
+            },
+            new Programacao()
+            {
+                iconUrl = "@drawable/icon_palestra_maciel",
+                apresentadorProgramacao = "Maciel Barreto",
+                temaProgramacao = "O mundo do Casemod (computadores turbinados)",
+                textoProgramacao = "Local: AUDITÓRIO – FTC \r\nDia: 08/11  \r\nHorário: 19:00 às 20:30",
+                apresentadorSite = "https://www.linkedin.com/in/maciel-barreto-ab78447a/"
+            },
+            new Programacao()
+            {
+                iconUrl = "@drawable/icon_palestra_helder",
+                apresentadorProgramacao = "Helder Moraes de Almeida",
+                temaProgramacao = "Os Desafios da Gestão de TI",
+                textoProgramacao = "Local: AUDITÓRIO – FTC \r\nDia: 08/11  \r\nHorário: 20:30 às 21:45",
+                apresentadorSite = "https://www.facebook.com/heldermoraesde.almeida?ref=br_rs"
             }
         });
 
@@ -61,10 +97,26 @@ namespace xsinita.Core.Utilities
         {
             new Programacao()
             {
-                iconUrl = "@drawable/icon_perfil_batman",
-                apresentadorProgramacao = "Bruce Wayne ",
-                temaProgramacao = "The Dark Knight",
-                textoProgramacao = "Batman é um personagem fictício, um super-herói da banda desenhada americana publicada pela DC Comics. Foi criado pelo escritor Bill Finger e pelo artista Bob Kane, e apareceu pela primeira vez na revista Detective Comics #27 (Maio de 1939)."
+                iconUrl = "@drawable/icon_perfil_aline",
+                apresentadorProgramacao = "Alline Cardoso e Gleidson Ferreira",
+                temaProgramacao = "Oratória",
+                textoProgramacao = "Local: AFI - SALA 209 \r\nDia: 09/11 \r\nHorário: 19:00 às 21:45"
+            },
+            new Programacao()
+            {
+                iconUrl = "@drawable/icon_perfil_manuela",
+                apresentadorProgramacao = "Manuela Berbert",
+                temaProgramacao = "Empreendedorismo digital",
+                textoProgramacao = "Local: FTC - SALA 207 \r\nDia: 09/11 e 10/11 \r\nHorário: 19:00 às 21:45",
+                apresentadorSite = "https://www.linkedin.com/in/manuela-berbert-49467076/"
+            },
+            new Programacao()
+            {
+                iconUrl = "@drawable/icon_perfil_evila",
+                apresentadorProgramacao = "Evila Quirino",
+                temaProgramacao = "Segurança em Dispositivos Móveis",
+                textoProgramacao = "Local: TABLADO \r\nDia: 09/11 \r\nHorário: 19:00 às 21:45",
+                apresentadorSite = "https://www.facebook.com/evila.quirino?ref=br_rs"
             }
         });
         #endregion

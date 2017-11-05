@@ -22,6 +22,15 @@ namespace xsinita.Services
             snackBar.Show();
         }
 
+        public void ShowSnackbarCoordinatorLayout(string message)
+        {
+            var linearLayout = _act.FindViewById<CoordinatorLayout>(Resource.Id.root);
+            Snackbar snackBar = Snackbar.Make(linearLayout, message, Snackbar.LengthLong);
+            snackBar.SetAction("OK", action => { });
+            snackBar.SetDuration(3000); // 3 segundos
+            snackBar.Show();
+        }
+
         public void ShowProgessDialog() // TODO: Atribuir a messagem na chamada do método.
         {
             _progress.Indeterminate = true;

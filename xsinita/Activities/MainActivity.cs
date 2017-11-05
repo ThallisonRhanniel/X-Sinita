@@ -13,7 +13,7 @@ using xsinita.Core.ViewModels.Programacao.ViewPager;
 namespace xsinita.Activities
 {
     [Activity(
-        Label = "X Sinita",
+        Label = "XI Sinita",
         Theme = "@style/AppTheme",
         LaunchMode = LaunchMode.SingleTop,
         Name = "xsinita.activities.MainActivity"

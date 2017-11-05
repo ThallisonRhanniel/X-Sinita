@@ -31,7 +31,7 @@ namespace xsinita.Fragments.Programacao.ViewPager
                 {
                     new MvxCachingFragmentStatePagerAdapter.FragmentInfo("Minicursos", typeof(RecyclerViewPagesFragment), typeof(RecyclerViewPagesViewModel), new { index = "Minicursos"} ),
                     new MvxCachingFragmentStatePagerAdapter.FragmentInfo("Palestras", typeof(RecyclerViewPagesFragment), typeof(RecyclerViewPagesViewModel), new { index = "Palestras"}),
-                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("Workshop", typeof(RecyclerViewPagesFragment), typeof(RecyclerViewPagesViewModel), new { index = "Workshop"})
+                    new MvxCachingFragmentStatePagerAdapter.FragmentInfo("Workshops", typeof(RecyclerViewPagesFragment), typeof(RecyclerViewPagesViewModel), new { index = "Workshop"})
                 };
                 viewPager.Adapter = new MvxCachingFragmentStatePagerAdapter(Activity, ChildFragmentManager, fragments);
             }

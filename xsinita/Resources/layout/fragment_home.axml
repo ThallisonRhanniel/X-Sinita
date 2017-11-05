@@ -39,8 +39,8 @@
                 android:layout_below="@+id/cardview_Main1"
                 android:id="@+id/imageFacebook"
                 android:layout_width="100.0dp"
-                android:layout_height="82.3dp"
-                android:src="@drawable/icon_home_face"
+                android:layout_height="82.3dp"                
+                local:MvxBind="PicassoDrawableHome '@drawable/icon_home_face'" 
                 android:layout_marginTop="7.0dp"
                 android:layout_marginBottom="5.0dp" />
             <View
@@ -90,8 +90,8 @@
                 android:layout_below="@+id/cardview_Main2"
                 android:id="@+id/imageInstagram"
                 android:layout_width="100.0dp"
-                android:layout_height="82.3dp"
-                android:src="@drawable/Icon_Home_Instagram"
+                android:layout_height="82.3dp"                
+                local:MvxBind="PicassoDrawableHome '@drawable/icon_home_instagram'" 
                 android:layout_marginTop="7.0dp"
                 android:layout_marginBottom="5.0dp" />
             <View
@@ -140,7 +140,7 @@
                 android:id="@+id/imageLinkedin"
                 android:layout_width="100.0dp"
                 android:layout_height="82.3dp"
-                android:src="@drawable/Icon_Home_Linkedin"
+                local:MvxBind="PicassoDrawableHome '@drawable/icon_home_linkedin'"
                 android:layout_marginTop="7.0dp"
                 android:layout_marginBottom="5.0dp" />
             <View

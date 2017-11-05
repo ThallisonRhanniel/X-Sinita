@@ -21,7 +21,7 @@ namespace xsinita.Core.ViewModels.Home
 
         public ICommand ShowInstagramCommand
         {
-            get { return new MvxCommand(() => _webBrowser.ShowWebPage("https://www.instagram.com/p/BKntXHfAwNd/?taken-by=sinitaftc")); } 
+            get { return new MvxCommand(() => _webBrowser.ShowWebPage("https://www.instagram.com/p/BaLL-oTDK84/?taken-by=sinitaftc")); } 
         }
 
         public ICommand ShowLinkedinThallisonCommand

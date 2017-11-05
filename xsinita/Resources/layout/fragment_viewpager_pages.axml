@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             local:MvxItemTemplate="@layout/fragment_viewpager_pages_item"
-            local:MvxBind="ItemsSource ItemsProgramacao; ItemClick ItemSelected"/>
+            local:MvxBind="ItemsSource ItemsProgramacao; ItemClick ApresentadorSiteClickCommand"/>
     </MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>
 <!--  local:MvxItemTemplate="@layout/fragment_viewpager_pages_item" -->

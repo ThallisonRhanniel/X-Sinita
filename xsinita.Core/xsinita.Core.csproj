@@ -40,7 +40,6 @@
     <Compile Include="Interfaces\IDialogService.cs" />
     <Compile Include="Interfaces\IPostService.cs" />
     <Compile Include="Models\Cometarios.cs" />
-    <Compile Include="Models\ListComentario.cs" />
     <Compile Include="Models\Programacao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\ListProgramacao.cs" />

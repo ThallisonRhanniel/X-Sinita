@@ -114,7 +114,7 @@ namespace xsinita.Fragments.Menu
             {
                 case Resource.Id.nav_home:
                     ViewModel.ShowHomeCommand.Execute();
-                    ((MainActivity)Activity).Title = "X Sinita";
+                    ((MainActivity)Activity).Title = "XI Sinita";
                     break;
                 case Resource.Id.nav_programacao:
                     ViewModel.ShowProgramacaoCommand.Execute();

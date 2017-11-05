@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
   <include
@@ -18,6 +19,6 @@
             android:layout_height="match_parent"
             android:background="@color/home_page_gray"
             local:MvxItemTemplate="@layout/fragment_feedback_comentarios_item"
-            local:MvxBind="ItemsSource ItemsComentarios; ItemClick ItemSelected" />
+            local:MvxBind="ItemsSource ItemsComentarios" />
     </MvvmCross.Droid.Support.V4.MvxSwipeRefreshLayout>
 </android.support.design.widget.CoordinatorLayout>

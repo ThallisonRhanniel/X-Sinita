@@ -60,6 +60,7 @@ namespace xsinita.Core.ViewModels.Feedback
                     var mensagem = await _iPostService.EnviarDadosAsync(Nome, SelecItemSpinner, Comentario);
                     _iDialogService.DismissProgessDialog();
                     _iDialogService.ShowSnackbar(mensagem);
+                    Comentario = string.Empty;
                 }
             });}
         }
