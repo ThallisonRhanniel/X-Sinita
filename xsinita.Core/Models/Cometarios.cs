@@ -1,5 +1,6 @@
 ﻿namespace xsinita.Core.Models
 {
+    [Preserve(AllMembers = true)]
     public class Cometarios
     {
         public string name { get; set; }

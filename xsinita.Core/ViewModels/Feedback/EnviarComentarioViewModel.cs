@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using MvvmCross.Core.ViewModels;
 using xsinita.Core.Interfaces;
+using xsinita.Core.Models;
 using xsinita.Core.ViewModels.Base;
 
 namespace xsinita.Core.ViewModels.Feedback
 {
+    [Preserve(AllMembers = true)]
     public class EnviarComentarioViewModel : BaseViewModel
     {
         private readonly IDialogService _iDialogService;

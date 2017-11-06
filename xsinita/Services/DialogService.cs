@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Widget;
 using MvvmCross.Platform;
@@ -7,6 +8,7 @@ using xsinita.Core.Interfaces;
 
 namespace xsinita.Services
 {
+    [Preserve(AllMembers = true)]
     public class DialogService : IDialogService
     {
         private static readonly IMvxAndroidCurrentTopActivity Top = Mvx.Resolve<IMvxAndroidCurrentTopActivity>();

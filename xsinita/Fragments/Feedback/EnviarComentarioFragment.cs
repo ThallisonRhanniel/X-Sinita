@@ -10,6 +10,7 @@ namespace xsinita.Fragments.Feedback
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
     [Register("xsinita.fragments.Feedback.EnviarComentarioFragment")]
+    [Preserve(AllMembers = true)]
     public class EnviarComentarioFragment : BaseFragment<EnviarComentarioViewModel>
     {
         private View _view;

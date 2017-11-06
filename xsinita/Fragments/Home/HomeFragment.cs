@@ -10,6 +10,7 @@ namespace xsinita.Fragments.Home
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register("xsinita.fragments.home.HomeFragment")]
+    [Preserve(AllMembers = true)]
     public class HomeFragment : BaseFragment<HomeViewModel>
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

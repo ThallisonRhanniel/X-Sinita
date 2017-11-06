@@ -1,5 +1,6 @@
 ﻿namespace xsinita.Core.Models
 {
+    [Preserve(AllMembers = true)]
     public class Programacao
     {
         public string iconUrl { get; set; }

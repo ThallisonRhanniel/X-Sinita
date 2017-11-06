@@ -1,10 +1,12 @@
 ﻿using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Plugins.WebBrowser;
+using xsinita.Core.Models;
 using xsinita.Core.ViewModels.Base;
 
 namespace xsinita.Core.ViewModels.Home
 {
+    [Preserve(AllMembers = true)]
     public class HomeViewModel : BaseViewModel
     {
         private readonly IMvxWebBrowserTask _webBrowser;

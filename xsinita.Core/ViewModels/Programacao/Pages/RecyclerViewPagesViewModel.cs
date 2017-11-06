@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Plugins.WebBrowser;
+using xsinita.Core.Models;
 using xsinita.Core.ViewModels.Base;
 using xsinita.Core.Utilities;
 
 namespace xsinita.Core.ViewModels.Programacao.Pages
 {
+    [Preserve(AllMembers = true)]
     public class RecyclerViewPagesViewModel : BaseViewModel
     {
         private readonly IMvxWebBrowserTask _webBrowser;
@@ -35,7 +36,6 @@ namespace xsinita.Core.ViewModels.Programacao.Pages
                 });
             }
         }
-
 
         private bool _isRefreshing;
         public virtual bool IsRefreshing

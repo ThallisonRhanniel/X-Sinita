@@ -15,6 +15,7 @@ namespace xsinita.Fragments.Feedback
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
     [Register("xsinita.fragments.Feedback.MostrarComentariosFragment")]
+    [Preserve(AllMembers = true)]
     public class MostrarComentariosFragment : BaseFragment<MostrarComentariosViewModel>
     {
         private View _view;

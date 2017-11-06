@@ -7,6 +7,7 @@ using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 using Android.Widget;
 
+
 namespace xsinita.MvxBindings
 {
     [Preserve(AllMembers = true)]

@@ -8,6 +8,8 @@ using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 using Refractored.Controls;
 
+
+
 namespace xsinita.MvxBindings
 {
     [Preserve(AllMembers = true)]
@@ -30,11 +32,11 @@ namespace xsinita.MvxBindings
             if (value == null) return;
             var circleView = (CircleImageView)target;
             dynamic imagem = null;
-
             if (value.ToString().StartsWith("/"))
                 imagem = new File(value.ToString());  //Se for a imagem da galeria.
             else
                 imagem = _act.Resources.GetIdentifier(value.ToString(), "drawable", _act.PackageName);
+
             Picasso.With(_act)
                 .Load(imagem)
                 .Resize(300, 200)

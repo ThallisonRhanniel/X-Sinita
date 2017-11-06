@@ -15,6 +15,7 @@ namespace xsinita.Fragments.Programacao.ViewPager
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame)]
     [Register("xsinita.fragments.programacao.ViewPager")]
+    [Preserve(AllMembers = true)]
     public class ViewPagerProgramacao : BaseFragment<ViewPagerViewModel>
     {
         private View _view;

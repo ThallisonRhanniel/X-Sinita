@@ -1,6 +1,6 @@
 ﻿using System;
-using MvvmCross.Binding.Combiners;
 using MvvmCross.Core.ViewModels;
+using xsinita.Core.Models;
 using xsinita.Core.ViewModels.Base;
 using xsinita.Core.ViewModels.Feedback;
 using xsinita.Core.ViewModels.Home;
@@ -8,6 +8,7 @@ using xsinita.Core.ViewModels.Programacao.ViewPager;
 
 namespace xsinita.Core.ViewModels.Menu
 {
+    [Preserve(AllMembers = true)]
     public class MenuViewModel : BaseViewModel
     {
         static readonly Random rnd = new Random();
@@ -19,8 +20,6 @@ namespace xsinita.Core.ViewModels.Menu
             get { return _iconUrl; }
             set { SetProperty(ref _iconUrl, value); }
         }
-
-        
 
         private bool _clickButton;
         public bool ClickButton

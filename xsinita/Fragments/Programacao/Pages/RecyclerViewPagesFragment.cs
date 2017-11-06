@@ -15,6 +15,7 @@ namespace xsinita.Fragments.Programacao.Pages
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
     [Register("xsinita.fragments.programacao.pages.RecyclerViewPagesFragment")]
+    [Preserve(AllMembers = true)]
     public class RecyclerViewPagesFragment : BaseFragment<RecyclerViewPagesViewModel>
     {
 

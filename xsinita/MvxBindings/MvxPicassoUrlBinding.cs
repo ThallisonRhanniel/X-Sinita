@@ -8,6 +8,7 @@ using Refractored.Controls;
 using Com.Squareup.Picasso;
 
 
+
 namespace xsinita.MvxBindings
 {
     [Preserve(AllMembers = true)]

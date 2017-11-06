@@ -20,6 +20,7 @@ namespace xsinita.Fragments.Menu
 {
     [MvxFragment(typeof(MainViewModel), Resource.Id.navigation_frame)]
     [Register("xsinita.fragments.menu.MenuFragment")]
+    [Preserve(AllMembers = true)]
     public class MenuFragment : MvxFragment<MenuViewModel>, NavigationView.IOnNavigationItemSelectedListener
     {
         private NavigationView _navigationView;

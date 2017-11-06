@@ -13,10 +13,10 @@ using System.Net.Http.Headers;
 
 namespace xsinita.Core.ViewModels.Feedback
 {
+    [Preserve(AllMembers = true)]
     public class MostrarComentariosViewModel : BaseViewModel
     {
         private readonly IDialogService _iDialogService;
-        
 
         public MostrarComentariosViewModel(IDialogService iDialogService)
         {
@@ -34,9 +34,9 @@ namespace xsinita.Core.ViewModels.Feedback
         {
             try
             {
-                var geturi = new Uri("http://192.168.0.108:8000/v1/comments/"); // https://sinita-api.herokuapp.com/v1/comments
+                var geturi = new Uri("https://sinita-api.herokuapp.com/v1/comments");
                 var httpClient = new HttpClient();
-                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "2c67cd4daedbf1b5a5ff40fe07f669c142f41ecc");
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "07acc5cd49845af720ab0a9d4dcb7dcd7f05c45d");
                 var downloadTask = await httpClient.GetAsync(geturi);
                 var responseGet = await downloadTask.Content.ReadAsStringAsync();
                 var listComentario = JsonConvert.DeserializeObject<List<Cometarios>>(responseGet);
@@ -54,9 +54,8 @@ namespace xsinita.Core.ViewModels.Feedback
                 }
                 IsRefreshing = false;
             }
-            catch (Exception message)
+            catch (Exception)
             {
-                var oi = message;
                 _iDialogService.ShowSnackbarCoordinatorLayout(
                     "Incapaz de carregar o comentários, verifique sua conexão com a internet.");
             }

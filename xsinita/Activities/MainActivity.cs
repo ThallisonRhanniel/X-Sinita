@@ -6,6 +6,7 @@ using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Views.InputMethods;
 using MvvmCross.Droid.Support.V7.AppCompat;
+using xsinita.Core.Models;
 using xsinita.Core.ViewModels.Base;
 using xsinita.Core.ViewModels.Programacao.ViewPager;
 
@@ -18,6 +19,7 @@ namespace xsinita.Activities
         LaunchMode = LaunchMode.SingleTop,
         Name = "xsinita.activities.MainActivity"
     )]
+    [Preserve(AllMembers = true)]
     public class MainActivity : MvxCachingFragmentCompatActivity<MainViewModel> 
     {
 

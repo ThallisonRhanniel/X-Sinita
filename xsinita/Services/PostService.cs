@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Preferences;
+using Android.Runtime;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 using xsinita.Core.Interfaces;
 
 namespace xsinita.Services
 {
+    [Preserve(AllMembers = true)]
     public class PostService : IPostService
     {
         private static readonly IMvxAndroidCurrentTopActivity Top = Mvx.Resolve<IMvxAndroidCurrentTopActivity>();
@@ -35,9 +37,9 @@ namespace xsinita.Services
                          if (imagePerfil.Exists())
                              filePath = imagePerfil.AbsolutePath;
 
-                         var url = "http://192.168.0.108:8000/v1/comments/";  //https://sinita-api.herokuapp.com/v1/comments
+                         var url = "https://sinita-api.herokuapp.com/v1/comments";
 
-                         httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "2c67cd4daedbf1b5a5ff40fe07f669c142f41ecc");
+                         httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", "07acc5cd49845af720ab0a9d4dcb7dcd7f05c45d");
                          MultipartFormDataContent form = new MultipartFormDataContent();
 
                          FileStream fs = File.OpenRead(filePath);
