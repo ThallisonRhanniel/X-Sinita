@@ -30,5 +30,10 @@ namespace xsinita.Core.ViewModels.Home
         {
             get { return new MvxCommand(() => _webBrowser.ShowWebPage("https://www.linkedin.com/in/thallisonrhanniel")); }
         }
+
+        public ICommand ShowSiteCommand
+        {
+            get { return new MvxCommand(() => _webBrowser.ShowWebPage("http://www.sinitaftc.com.br/")); }
+        }
     }
 }

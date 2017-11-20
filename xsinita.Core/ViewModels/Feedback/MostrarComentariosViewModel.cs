@@ -21,6 +21,7 @@ namespace xsinita.Core.ViewModels.Feedback
         public MostrarComentariosViewModel(IDialogService iDialogService)
         {
             _iDialogService = iDialogService;
+
         }
 
         private ObservableCollection<Cometarios> _itemsComentario = new MvxObservableCollection<Cometarios>();
@@ -70,6 +71,12 @@ namespace xsinita.Core.ViewModels.Feedback
             set { SetProperty(ref _isRefreshing, value); }
         }
 
+        public async void Init()
+        {
+            IsRefreshing = true;
+            await GetApiComentariosAsync();
+            IsRefreshing = false;
+        }
 
         public ICommand ReloadCommand
         {

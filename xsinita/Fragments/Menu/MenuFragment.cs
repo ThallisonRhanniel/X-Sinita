@@ -12,9 +12,11 @@ using MvvmCross.Binding.Droid.BindingContext;
 using MvvmCross.Droid.Shared.Attributes;
 using MvvmCross.Droid.Support.V4;
 using MvvmCross.Platform.WeakSubscription;
+
 using xsinita.Activities;
 using xsinita.Core.ViewModels.Base;
 using xsinita.Core.ViewModels.Menu;
+
 
 namespace xsinita.Fragments.Menu
 {
