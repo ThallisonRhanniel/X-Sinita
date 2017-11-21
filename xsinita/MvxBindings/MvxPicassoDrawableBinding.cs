@@ -7,7 +7,7 @@ using MvvmCross.Binding.Droid.Target;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Droid.Platform;
 using Refractored.Controls;
-
+using Uri = Android.Net.Uri;
 
 
 namespace xsinita.MvxBindings
@@ -32,8 +32,9 @@ namespace xsinita.MvxBindings
             if (value == null) return;
             var circleView = (CircleImageView)target;
             dynamic imagem = null;
+            
             if (value.ToString().StartsWith("/"))
-                imagem = new File(value.ToString());  //Se for a imagem da galeria.
+                imagem = new File("//" + value.ToString());  //Se for a imagem da galeria. content://media/external/images/media/5124
             else
                 imagem = _act.Resources.GetIdentifier(value.ToString(), "drawable", _act.PackageName);
 
